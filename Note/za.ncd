@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:10-->
+<!--LastNote:9-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -168,7 +168,7 @@ java是用不了的。确实jdk/bin目录下包含了所有的命令。可是有
 </DD>
 <DT>Windows快捷键</DT>
 <!--property:date_created=1474941508-->
-<!--property:date_modified=1475029036-->
+<!--property:date_modified=1475120153-->
 <DD>
 1.Win+数字键  选中任务栏程序<BR>
 <BR>
@@ -183,7 +183,9 @@ java是用不了的。确实jdk/bin目录下包含了所有的命令。可是有
 <BR>
 6.C+回车   查看所选项目的属性<BR>
 <BR>
-7.关闭 ： Win+W     ，   A+F4（强力）
+7.关闭 ： Win+W     ，   A+F4（强力）<BR>
+<BR>
+8.退回到上级目录，Backspace
 </DD>
 <DT>IDEA</DT>
 <!--property:date_created=1475034408-->

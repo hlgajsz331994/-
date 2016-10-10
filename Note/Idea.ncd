@@ -1,0 +1,86 @@
+<!DOCTYPE NoteCase-File>
+<!--LastNote:2-->
+<HTML>
+<HEAD>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+<meta name="generator" content="NoteCase 1.9.8">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<DL>
+<DT>IDEA</DT>
+<!--property:date_created=1475888158-->
+<!--property:date_modified=1475888158-->
+<!--property:expanded-->
+<DD>
+<DL>
+<DT>项目设置</DT>
+<!--property:date_created=1475888169-->
+<!--property:date_modified=1475982040-->
+<DD>
+1. Project 相当于 Myeclipse的 workSpace    ,Moudel   相当于Myeclipse 的 Project .<BR>
+<BR>
+2.建议:  一个工作空间对应一个Module<BR>
+<BR>
+3.修改主题的颜色和字体   , 修改编辑器的颜色和字体<BR>
+		主题：① structor （左边） ： 结构图<BR>
+		编辑器：①光标停留的地方：脱字符号行<BR>
+		<BR>
+4.运行第一个项目：   创建项目的SDK（软件开发工具），创建项目，给项目添加运行配置	<BR>
+<BR>
+5.配置Tomcat ：  添加Tomcat 配置   ，在项目设置里面 添加 Artifacts    	<BR>
+		<BR>
+		<BR>
+		<BR>
+		<BR>
+		<BR>
+		<BR>
+
+</DD>
+<DT>快捷键</DT>
+<!--property:date_created=1475911642-->
+<!--property:date_modified=1476001144-->
+<DD>
+1.自动保存<BR>
+<BR>
+1）C<BR>
+C+Q： 选中单位，逐渐扩展<BR>
+C+E： 查看最近打开的标签<BR>
+C+P  ： 方法参数提示<BR>
+C+123   ：定位书签	C+S+123   ： 加书签<BR>
+C+左右方向键   ：    根据单位跳转<BR>
+C+上下  ：   鼠标滚轮<BR>
+C+Tab    ：　　可打开最近的标签　　（加Delete   可删除）<BR>
+C+F12  ：  根据大纲来查看结构，定位位置<BR>
+C+ F3   ：定位到下一个同名词的位置<BR>
+C+B   ：打开光标所在位置的方法<BR>
+C+G ： 跳转到指定行<BR>
+<BR>
+2）C+A<BR>
+C+S+R： 替换<BR>
+<BR>
+3）C+S<BR>
+C+S+A  ：搜索操作或设置
+</DD>
+<DT>新节点</DT>
+<!--property:date_created=1475913574-->
+<!--property:date_modified=1475913574-->
+</DL>
+
+</DD>
+<DT>Ant</DT>
+<!--property:date_created=1475913580-->
+<!--property:date_modified=1475914456-->
+<DD>
+<BR>
+你想问的是JAVA构建工具ant吗？简单说来可以这么理解，如果你用记事本写JAVA程序，然后在cmd里输入javac命令编译它，但是有一天你发现<BR>
+每次手动输入太麻烦而且都是重复劳动，于是你下决心改变这种状况，然后学会了把javac命令写到一个bat文件中，以后编译只需要单击运行即可；<BR>
+然后随着你敲的代码越来越多，而且有了JAVA project概念，于是你手动新建了很多文件夹比如src、bin、lib，你有写了一个bat文件来减少你的重<BR>
+复劳动；再后来随着你编码的需求更多，你对javac命令也了解更多，譬如打包、运行不同的类等等，而且你又学会了用junit，test类源码要和非test <BR>
+源码分开，你的boss要求你把web项目部署到tomcat下……你看了一下你的屏幕，满满的都是各种各样bat文件，查找起来基本靠记忆，这样不好不好。<BR>
+于是乎ant闪亮登场，从此妈妈再也不用担心我点错命令了！！废话有点多😊。ant说白了就是代替各种bat文件来帮助你实现想要的命令（主要是和JAVA<BR>
+编程相关），而且她做得更多效率更好。
+</DD>
+</DL>
+</BODY>
+</HTML>
