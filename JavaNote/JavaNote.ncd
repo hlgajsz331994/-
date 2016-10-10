@@ -1,0 +1,604 @@
+<!DOCTYPE NoteCase-File>
+<!--LastNote:0-->
+<HTML>
+<HEAD>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+<meta name="generator" content="NoteCase 1.9.8">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<DL>
+<DT>JavaWeb</DT>
+<!--property:date_created=1470038581-->
+<!--property:date_modified=1476087017-->
+<!--property:expanded-->
+<DD>
+	一个WEB中完全可以没有web.xml文件。<BR>
+	web.xml是用来配置  欢迎页、servlet、filter等的。<BR>
+	<BR>
+1.web.xml：1）web-app：模式文件   ，  模式文件中定义了多少种标签元素，web.xml种就可以出现它的模式文件中所定义的标签元素，它就能拥有<BR>
+								定义出来的那些功能。	<BR>
+<BR>
+<BR>
+<BR>
+<DL>
+<DT>简介</DT>
+<!--property:date_created=1470038626-->
+<!--property:date_modified=1476084191-->
+<!--property:expanded-->
+<DD>
+JavaWeb应用是由一组Servlet、HTML页、类、以及它可以被绑定的资源构成。<BR>
+Java Web应用中可以包含如下内容：<BR>
+&#8212; Servlet<BR>
+&#8212; JSP<BR>
+&#8212; 实用类<BR>
+&#8212; 静态文档如HTML、图片等<BR>
+&#8212; 描述Web应用中的信息（web.xml）<BR>
+<BR>
+<BR>
+Web 浏览器   ---  Web服务器		1.静态页面<BR>
+								2.Servlet容器(JSP、Servlet)  ---   数据库<BR>
+目录结构：<BR>
+	----.html .jsp(用到的类，编译后的class文件必须放在classes下)<BR>
+	----/WEB-INF/web.xml<BR>
+	----/WEB-INF/classes<BR>
+	----/WEB-INF/lib<BR>
+	<BR>
+	<BR>
+第一个WebApp：<BR>
+	把(jsp中用到的类)类编译后的类文件放到WEB-INF/classes，（可以通过修改默认的输出目录，自动把编译后的文件输出到classes中去）（直接保存也可输出）<BR>
+	再①把整个文件夹放到TomCat的webapps中去。	<BR>
+	（②：Tomcat目录下conf\Catalina\localhost 中创建一个（名字xx）.xml文件）<BR>
+	&lt;Context <BR>
+	path=&quot;/test&quot;         <BR>
+	docBase=&quot;E:\Workpace\FirstWebApp&quot;  （文件夹位置）<BR>
+	reloadable=&quot;true&quot;				（当修改了docBase下的classes目录下的class文件时，Tomcat服务器是否会重新加载WEB应用）<BR>
+	/&gt;<BR>
+	访问通过    localhost/名字xx/xxx.jsp<BR>
+	<BR>
+	<BR>
+<BR>
+										<BR>
+<BR>
+										<BR>
+
+</DD>
+<DT>Myeclipse</DT>
+<!--property:date_created=1470923758-->
+<!--property:date_modified=1470935366-->
+<!--property:expanded-->
+<DD>
+系统自带myEclipse tomcat      或者自行下载配置加入 Myeclpse  tomcat中的服务器<BR>
+再或者在服务栏新建Server
+</DD>
+<DT>Servlet</DT>
+<!--property:date_created=1470040159-->
+<!--property:date_modified=1470979373-->
+<!--property:expanded-->
+<DD>
+Servlet本质是一个JAVA类，实现一些特殊的接口，运行在Servlet容器里（例如：Tomcat、Servlet服务器）。<BR>
+<BR>
+Java Servlet是和平台无关的服务端组件，它运行在Servlet容器中。Servlet容器负责Servlet和客户的通信<BR>
+以及调用Servlet的方法，Servlet和客户的通信采用“请求/响应”的模式。<BR>
+Servlet可完成如下功能：<BR>
+				--创建并返回基于客户请求的动态HTML页面。<BR>
+				--创建可嵌入到现有HTML页面中的部分HTML页面。<BR>
+				--与其他服务器资源（如数据库或基于Java的应用程序）进行通信。<BR>
+<BR>
+Servlet容器为JavaWeb应用提供运行时环境，它负责管理Servlet和JSP的生命周期，以及管理他们的共享数据。<BR>
+目前最流行的Servlet容器软件包括：<BR>
+		---Tomcat<BR>
+		---Resin<BR>
+		---J2EE服务器<BR>
+		<BR>
+		<img title="捕获.jpg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRof
+Hh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwh
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAAR
+CAB8AaIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAA
+AgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYk
+NOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk
+5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD36iiigAooooAKKKKACiiigAooooAKKKKA
+CiijNABRRRQAUUUUAFFFJmgBaKKKACiiigAooooAKKKKACiiigAoozSUALRVG41Sws7hLe5v
+reGaT7kckoVm+gJq9QAUUZA71Wt7y3uzKIJVk8pzG+P4WHUUAWaKqT3trbxytNcRRrCA0hZw
+Ng9T6UWeo2eoRGWyuobiMHBaJwwH5UAW6KTNGaAFooqtJPFC8aSSIjSNtQMcbj1wPU0AWaKK
+KACiiigAooooAKKKKACiiigAooooAYOaoapqlto9p9qu2KxZC5AJOTWj0Fcp4/H/ABTo/wCu
+y04q7sYYio6VGU1ukP8A+E60PvNL/wB+mpf+E60P/ntL/wB+m/wrzIUtdHsUfJ/6wVv5Uem/
+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"><BR>
+		<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DL>
+<DT>第一个Servlet</DT>
+<!--property:date_created=1470979546-->
+<!--property:date_modified=1471735901-->
+<!--property:expanded-->
+<DD>
+1.创建继承Servlet接口的类<BR>
+<BR>
+2.在web.xml中配置Servlet<BR>
+<BR>
+3.Servlet容器 ：运行Servlet、JSP、Filter等的软件环境。<BR>
+1）.可以来创建Servlet，并调用Servlet的相关生命周期方法<BR>
+2）Jsp，Filter，Listener，Tag<BR>
+<BR>
+4.Servlet 生命周期的方法：<BR>
+1）构造器：只有第一次请求Servlet时，创建Servlet实例，调用构造器。<BR>
+这说明Servlet是单实例的！<BR>
+2）init方法：只被调用一次，创建好实例后立即被调用，用于初始化当前Servlet。<BR>
+3）service：被多次调用，每次请求都会调用Service方法，实际用于响应请求。<BR>
+4）destroy：只被调用一次，在当前Servlet所在的WEB应用被卸载时调用，用于释放当前Servlet所占用的资源。<BR>
+<BR>
+5.load-on-startup参数：<BR>
+	1）可以指定Servlet被创建的时机，若为负数，则在第一次请求时被创建；<BR>
+		若为0或整数，则在当前WEB应用被Servlet容器加载时创建实例，且数值越小越早被创建。<BR>
+<BR>
+6.Servlet的注册与运行(web.xml中)<BR>
+&lt;Servlet&gt;元素用于注册一个Servlet，   &lt;servlet-name&gt;:设置注册的名称（任意）<BR>
+												 &lt;Servlet-class&gt;：完整类名 <BR>
+&lt;servlet-mapping&gt;元素用于映射一个已注册的Servlet的一个对外访问路径。<BR>
+												&lt;servlet-name&gt;用于指定Servlet的注册名称<BR>
+												&lt;url-pattren&gt; Servlet的对外访问路径。<BR>
+												<BR>
+7.关于Servler-mapping<BR>
+1）同一个Servlet可以映射到多个URL上，即多个&lt;servlet-mapping&gt;元素的&lt;servlet-name&gt;子元素的设置值可<BR>
+以是同一个Servlet的注册名。<BR>
+2）在Servlet映射到的URL中也可以使用*通配符，但是只能有两种固定的格式。<BR>
+一种格式是“*.扩展名”，另一种格式是以正斜杠（/）开通并以“/*”结尾。<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DL>
+<DT>①</DT>
+<!--property:date_created=1471090089-->
+<!--property:date_modified=1471789269-->
+<DD>
+	1.ServletConfig（init）：<BR>
+	  					1）获取Servlet初始化参数：getInitParameter(java.lang.String name)     String user = config.getInitParameter(&quot;user&quot;);<BR>
+						2）返回Enumeration对象：getInitParameterNames()    Enumeration&lt;String&gt; en =config.getInitParameterNames(); <BR>
+													测试此枚举是否包含更多的元素：boolean， hasMoreElements() <BR>
+       							   				如果此枚举对象至少还有一个可提供的元素，则返回此枚举的下一个元素：E ，nextElement()          									      <BR>
+						3）返回 Context对象： getServletContext()           ServletContext context = config.getServletContext();           <BR>
+	<BR>
+	2.ServletContext：<BR>
+						1）遍历WEB参数同上       1）、2）       WEB参数是全局参数，Servlet是局部参数<BR>
+						2）获取文件的绝对路径 ： String   getRealPath(String path）   String url = context.getRealPath(&quot;/hello.jsp&quot;);    <BR>
+						3) 获取当前Web应用的名称   getContextPath();       String webName = context.getContextPath();     <BR>
+											访问的文件夹的名字<BR>
+						4）获取目录下文件的输入流：getResourceAsStream(String path) <BR>
+						<BR>
+	3.HTTP协议：WEB浏览器与服务器之间的一问一答的交互过程必须遵循一定的规则，这个规则就是HTTP协议。<BR>
+					用于定义WEB浏览器与服务器之间交换数据的过程以及数据本身的格式。	<BR>
+	<BR>
+	4.get和post方式<BR>
+	1）是用GET方式传递参数<BR>
+		①。在浏览器中输入某个URL地址或单击一个超链接时，浏览器发出的HTTP请求方式为get。<BR>
+		②。<BR>
+		③。<BR>
+		④。使用GET方式传送的数据量一般限制在1KB以下。<BR>
+	2）用POST方式传递参数<BR>
+	<BR>
+	5.如何在Servlet中获取请求信息：Servlet的service（）方法用于应答请求：每次请求都会调用service（）方法<BR>
+		1）ServletRequest（子接口HttpServletRequest）：封装了请求信息，可以从中获取到任何的请求信息。<BR>
+			①：获取请求参数(ServletRequest接口中的方法)<BR>
+			--&gt;String getParameter(String name)  传入参数名，返回一个请求参数的字符串值。若该参数不存在，则返回一个空值。<BR>
+			<BR>
+			--&gt;Enumeration  getParameterNames()  返回一个包含了请求中的参数名字的字符串对象的枚举变量。<BR>
+<BR>
+			--&gt;String[] getParameterValues(String name)    传入参数名，返回一组请求参数的字符串值（多选）。若该参数不存在，则返回一个空值。<BR>
+<BR>
+			--&gt;Map getParameterMap（）      返回键值       key：参数名，String        value：值 ，String[]<BR>
+			<BR>
+			② 获取请求的URI：（HttpServletRequest接口中的方法）<BR>
+				HttpServletRequest httpServletRequest = (HttpServletRequest)req;(向下转型，强制转换)（req本身是通过ServletRequest req = new HTTPServletRequest（）得到的）<BR>
+				String requestURI = httpServletRequest.getRequestURI();<BR>
+				System.out.println(&quot;requestURI:&quot;+requestURI);<BR>
+			③获取请求方式：HttpServletRequest httpServletRequest = (HttpServletRequest)req;<BR>
+									httpServletRequest.getmethod();<BR>
+			④：若是一个GET请求，获取请求参数对应的那个字符串，即？后的那个字符串 （  user=。。。。。。。）<BR>
+			<BR>
+	6.ServletResponse：封装了响应信息 ，想给用户什么响应，具体可以使用该接口的方法。		<BR>
+			①：获取输出流，可以打印内容到客户端页面	        PrintWriter pw = res.getWriter();<BR>
+			②：设置输出的方式，                 res.setContentType(&quot;application/msword&quot;);          输出word	<BR>
+<BR>
+	7.请求的转发和重定向			：  <BR>
+			<BR>
+			请求转发：RequestDispatcher 接口           forward（）方法       RequestDispatcher reqDis = request.getRequestDispatcher(&quot;/&quot;+path);<BR>
+																										reqDis.forward(request, response);<BR>
+			请求重定向：		response.sendRedirect(path);																					<BR>
+<BR>
+		1）本质区别：请求的转发只发出了一次请求，而重定向则发出了两次请求。	<BR>
+<BR>
+	具体：<BR>
+		①.	请求的转发：地址栏是初次发出请求的地址。<BR>
+		    	请求的重定向：地址栏不再是初次发出的请求地址,地址栏为最后响应的那个地址。<BR>
+		<BR>
+		②.请求转发：在最终的 Servlet 中， request 对象和中转的那个 request 是同一个对象.<BR>
+			请求的重定向： 在最终的 Servlet 中， request 对象和中转的那个 request 不是同一个对象。	<BR>
+		<BR>
+		③.请求的转发：只能转发当前WEB应用的资源<BR>
+			请求的重定向：可以重定向到任何资源        response.sendRedirect(&quot;http://www.baidu.com&quot;);<BR>
+<BR>
+		④.请求的转发：   /代表的是当前 WEB 应用的根目录<BR>
+			请求的重定向： / 代表的是当前 WEB 站点的根目录.    （ 8777 ）<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+														
+</DD>
+</DL>
+
+</DD>
+<DT>自定义Servlet</DT>
+<!--property:date_created=1471191185-->
+<!--property:date_modified=1471243864-->
+<!--property:expanded-->
+<DD>
+1My.GenericServlet<BR>
+1）.是一个Servlet'接口和ServletConfig接口的实现类，但是一个抽象类，其中的service方法为抽象方法。<BR>
+		自定义的一个Servlet接口的实现类：让开发的任何Servlet都继承该类，以简化开发<BR>
+①：在GenericServlet中声明了一个ServletConfig类型的成员变量，在init（ServletConfig）方法中对其进行了初始化。<BR>
+②：利用servletConfig成员变量的方法实现了ServletConfig接口的方法<BR>
+③：在父类中定义一个新的空的init（），在父类的init（）方法里调用空init（），在子类中继承并重写空init（），方便初始化。<BR>
+				或者直接重写init（），并调用super.init（config）.<BR>
+				<BR>
+2.MyHttpServlet               （HttpServlet）<BR>
+1）继承了MyGenericServlet类 ，是一个Servlet。针对HTTp协议所定制<BR>
+2）在Service（）方法中直接把ServletRequest 和 ServletResponse 转为 HttpServletRequest 和 HttpServletResponse 。<BR>
+	并且调用了重载service（HttpServletRequest，HttpServletResponse）<BR>
+3）根据请求方式，再调用doPost（）或者doGet（）。<BR>
+	<BR>
+	<b><span style="color:#ff0000">实际开发中，直接继承HttpServlet，并根据请求方式复写doXXX（）方法接口</span></b><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</DD>
+<DT>小点</DT>
+<!--property:date_created=1471185048-->
+<!--property:date_modified=1471243486-->
+<DD>
+1.访问直接跳过项目目录，直接访问WEbContent            /项目名   即为访问项目中的WebContent文件夹<BR>
+2.Servlet最常用的，直接继承HttpServlet实现类       类似于自定义的MyHttpServlet
+</DD>
+</DL>
+
+</DD>
+<DT>JSP</DT>
+<!--property:date_created=1471269793-->
+<!--property:date_modified=1471736661-->
+<DD>
+在很多动态网页中，绝大部分内容都是固定不变的，只有局部内容需要动态产生和改变。<BR>
+<BR>
+JSP是简化Servlet编写的一种技术，它将Java代码和HTML语句混合在同一个文件中编写，只对网页中的<BR>
+要动态产生的内容采用Java代码来编写，而对固定不变的静态内容采用普通静态HTML特免的方式编写。<BR>
+<BR>
+<BR>
+<BR>
+在body中，代码镶嵌在&lt;% %&gt;中<BR>
+<DL>
+<DT>JSP原理</DT>
+<!--property:date_created=1471423715-->
+<!--property:date_modified=1471754105-->
+<DD>
+1.JSP的运行原理：JSP本质上是个Servlet<BR>
+	每个JSP页面在第一次被访问时，JSP引擎（Tomcat中）将它翻译成一个Servlet源程序，接着再把Servlet源程序编译成Servlet的class类文件。<BR>
+	然后再由Servlet容器（Tomcat中的Servlet引擎）像调用普通Servlet程序一样的方式来装载和解释执行这个由JSP页面翻译成的Serlvet程序。<BR>
+	<BR>
+	JSP继承了HttpJspBase--(父类)HttpServlet<BR>
+	<BR>
+2.JSP要放在除WEB-INF目录以外的其他目录	<BR>
+	<BR>
+	<BR>
+<BR>
+				
+</DD>
+<DT>JSP相关属性</DT>
+<!--property:date_created=1471754087-->
+<!--property:date_modified=1471789449-->
+<DD>
+1.	JSP页面的隐含对象：<BR>
+		jspService（HttpServletRequest    request ， HttpServletResponse  response）中定义了如下变量        加上方法中的有八个， 另外加一个<BR>
+		PageContext pageContext=null；<BR>
+		HttpSession session = null；<BR>
+		ServletContext application = null；<BR>
+		ServletConfig config = null；<BR>
+		JspWriter out = null；<BR>
+		Object page = this ；<BR>
+		<BR>
+		//使用&lt;% %&gt;编写的代码也在【从HttpServlet中继承的】service（）方法当中。		<BR>
+		<BR>
+2.JSP模版元素：JSP页面中的静态Html内容	<BR>
+<BR>
+3. JSP表达式提供了一将一个 java 变量或表达式的计算结果输出到客户端的简化方式。<BR>
+它将要输出变量或表达式直接封装的&lt;%=     %&gt;之中。<BR>
+&lt;%<BR>
+	String str = &quot;abc&quot;;<BR>
+	out.print(str);<BR>
+ %&gt;<BR>
+ &lt;br&gt;&lt;br/&gt;<BR>
+ &lt;%=str %&gt;<BR>
+	<BR>
+4.JSP脚本片段：是指嵌套在&lt;% %&gt;之中的一条或多条Java程序代码。               （可以直接在访问地址处加【？age=23】来传入参数）<BR>
+多个脚本片段中的代码可以相互访问。<BR>
+&lt;%<BR>
+int age = Integer.valueOf(request.getParameter(&quot;age&quot;));<BR>
+if(age&gt;=18){<BR>
+ %&gt;d<BR>
+ 成年人<BR>
+ &lt;%}else{ %&gt;<BR>
+ 未成年<BR>
+ &lt;%} %&gt;<BR>
+<BR>
+5.JSP声明：JSP 声明将 Java 代码封装在&lt;%! 和 %&gt;之中，它里面的代码将被插入进 Servlet 的 _jspService 方法的外面<BR>
+（在JSP页面中几乎不这样使用）<BR>
+<BR>
+6.和属性相关的方法：(结合请求转发)<BR>
+1）.方法<BR>
+<BR>
+ void setAttribute(String name, Object o)  ：设置属性<BR>
+Object getAttribute(String name) 	：获取指定的属性<BR>
+Enumeration getAttributeNames()  ：获取所有的属性的名字组成的 Enumeration 对象<BR>
+ void removeAttribute(String name)  :移除指定的属性<BR>
+<BR>
+<BR>
+域对象： pageContext ， request ，session ， application<BR>
+pageContext：属性的作用范围仅限于当前JSP页面<BR>
+request： 属性的作用范围仅限于同一个请求。      （<span style="color:#ff0000">在有转发的情况下可以跨页面获取属性值</span>）<BR>
+session： 属性的作用范围限于一次会话（浏览器打开直到关闭）【前提：在此期间会话不失效】   request.getSession()<BR>
+application： 属性的作用范围限于当前 WEB 应用。                       （Web参数？）<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</DD>
+</DL>
+
+</DD>
+</DL>
+
+</DD>
+<DT>要点</DT>
+<!--property:date_created=1471752109-->
+<!--property:date_modified=1471752152-->
+<DD>
+1. Java.lang 包下的类都默认导入
+</DD>
+<DT>JDBC</DT>
+<!--property:date_created=1470040837-->
+<!--property:date_modified=1470040837-->
+<DD>
+<DL>
+<DT>相关</DT>
+<!--property:date_created=1470040928-->
+<!--property:date_modified=1470567076-->
+<DD>
+数据持久化：把数据保存到可掉电式存储设备中以供之后使用。<BR>
+持久化的实现过程大多通过各种关系数据库来完成。<BR>
+<BR>
+JAVA中数据库存取技术可分为如下几种：<BR>
+--JDBC直接访问数据库<BR>
+--JDO技术<BR>
+--第三方O/R工具，如Hibernate,ibatis等（只是更好的封装了JDBC）<BR>
+<BR>
+JDBC是java访问数据库的基石。<BR>
+<BR>
+JDBC<span style="color:#a52a2a">是一组通用的SQL数据库存取和操作的公共接口（一组API</span><span style="color:#ff0000">）</span>。定义了用来访问数据库的标准JAVA类库。<BR>
+JDBC<span style="color:#a52a2a">为访问不同的数据库提供了一种统一的途径。<BR>
+</span>一种多态的实现，不同的数据库实现JDBC的接口（JDBC的驱动）。<BR>
+JDBC的驱动程序：各个数据库厂商根据JDBC的规范制作的JDBC实现类的类库。（Driver:每个驱动程序必定实现的接口）<BR>
+Connection：（与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。）<BR>
+Statement：Statement 对象表示基本语句，其中将单个方法应用于某一目标和一组参数，以返回结果<BR>
+<BR>
+通过Driver对象（可通过反射获得Driver对象），获得Connection对象，再获得Statement对象。<BR>
+<BR>
+ResultSetMetaData：可用于获取关于 ResultSet 对象中列的类型和属性信息的对象。以下代码片段创建 ResultSet 对象 rs，<BR>
+创建 ResultSetMetaData 对象 rsmd，并使用 rsmd 查找 rs 有多少列，以及 rs 中的第一列是否可以在 WHERE 子句中使用。<BR>
+<BR>
+ <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</DD>
+<DT>DAO设计模式</DT>
+<!--property:date_created=1470568253-->
+<!--property:date_modified=1470568589-->
+<DD>
+					：Data Access Object （数据访问对象）<BR>
+			   what：访问数据信息的类，包含了对数据的CRUD（create，read，update，delete）。<BR>
+					而不包含任何业务相关的信息。<BR>
+		      	why： 实现功能的模块化，更有利于代码的维护和升级。<BR>
+					
+</DD>
+<DT>JAVA类的属性：</DT>
+<!--property:date_created=1470750199-->
+<!--property:date_modified=1470752138-->
+<DD>
+	1).在JavaEE中,Java类的属性通过getter,setter来定义:get(或set)方法,去除get(或set)后,首字母小写即为Java类的属性.(JavaBean)<BR>
+	2).而以前叫的那个叫属性,即为成员变量,称之为字段.<BR>
+	3).操作Java类的属性有一个工具包:beanutils---用来操作JavaBean              (开源的工具包)<BR>
+	需要加入jar包<BR>
+	①.setProperty()<BR>
+	②.getProperty()
+</DD>
+</DL>
+
+</DD>
+</DL>
+</BODY>
+</HTML>
