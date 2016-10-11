@@ -39,7 +39,7 @@
 </DD>
 <DT>快捷键</DT>
 <!--property:date_created=1475911642-->
-<!--property:date_modified=1476001144-->
+<!--property:date_modified=1476173311-->
 <DD>
 1.自动保存<BR>
 <BR>
@@ -60,11 +60,19 @@ C+G ： 跳转到指定行<BR>
 C+S+R： 替换<BR>
 <BR>
 3）C+S<BR>
-C+S+A  ：搜索操作或设置
+C+S+A  ：搜索操作或设置<BR>
+C+S+上下 ： 整行或整段上下移动
 </DD>
 <DT>新节点</DT>
 <!--property:date_created=1475913574-->
 <!--property:date_modified=1475913574-->
+<DT>问题</DT>
+<!--property:date_created=1476168691-->
+<!--property:date_modified=1476168735-->
+<DD>
+1. 右键不能run :   <BR>
+				解决：汉化包不对应
+</DD>
 </DL>
 
 </DD>
