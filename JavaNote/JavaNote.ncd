@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:4-->
+<!--LastNote:13-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -247,7 +247,7 @@ RRRQB//Z"><BR>
 <DL>
 <DT>第一个Servlet</DT>
 <!--property:date_created=1470979546-->
-<!--property:date_modified=1476176487-->
+<!--property:date_modified=1476254596-->
 <!--property:expanded-->
 <DD>
 1.创建继承Servlet接口的类<BR>
@@ -258,27 +258,9 @@ RRRQB//Z"><BR>
 	1）.可以来创建Servlet，并调用Servlet的相关生命周期方法<BR>
 	2）Jsp，Filter，Listener，Tag<BR>
 <BR>
-4.Servlet 生命周期的方法：<BR>
-	1）构造器：只有第一次请求Servlet时，创建Servlet实例，调用构造器。<BR>
-		这说明Servlet是单实例的！<BR>
-	2）init方法：只被调用一次，创建好实例后立即被调用，用于初始化当前Servlet。<BR>
-	3）service：被多次调用，每次请求都会调用Service方法，实际用于响应请求。<BR>
-	4）destroy：只被调用一次，在当前Servlet所在的WEB应用被卸载时调用，用于释放当前Servlet所占用的资源。<BR>
-	5）ServletConfig（init）：        （Servlet传递配置参数在 ServletConfig的一个对象内   ）<BR>
-  					①获取Servlet初始化参数：getInitParameter(java.lang.String name)     String user = config.getInitParameter(&quot;user&quot;);<BR>
 <BR>
-					②返回Enumeration对象（获取初始参数的key值）：getInitParameterNames()    Enumeration&lt;String&gt; en =config.getInitParameterNames(); <BR>
-										测试此枚举是否包含更多的元素：boolean， hasMoreElements() <BR>
-						   				如果此枚举对象至少还有一个可提供的元素，则返回此枚举的下一个元素：E ，nextElement()    <BR>
-						      									      <BR>
-					③返回 Context对象： getServletContext()           ServletContext context = config.getServletContext();           <BR>
-									-1-ServletContext：<BR>
-											1）遍历WEB参数同上       1）、2）       WEB参数是全局参数，Servlet是局部参数<BR>
-											2）获取文件的绝对路径 ： String   getRealPath(String path）   String url = context.getRealPath(&quot;/hello.jsp&quot;);    <BR>
-											3) 获取当前Web应用的名称   getContextPath();       String webName = context.getContextPath();     <BR>
-																访问的文件夹的名字<BR>
-											4）获取目录下文件的输入流：getResourceAsStream(String path) <BR>
-											<BR>
+			<BR>
+。XML											<BR>
 5.load-on-startup参数：<BR>
 	1）可以指定Servlet被创建的时机，若为负数，则在第一次请求时被创建；<BR>
 		若为0或整数，则在当前WEB应用被Servlet容器加载时创建实例，且数值越小越早被创建。<BR>
@@ -309,16 +291,45 @@ RRRQB//Z"><BR>
 <BR>
 <BR>
 <DL>
-<DT>①</DT>
-<!--property:date_created=1471090089-->
-<!--property:date_modified=1476174442-->
+<DT>生命周期</DT>
+<!--property:date_created=1476254574-->
+<!--property:date_modified=1476254598-->
 <DD>
-<BR>
-						<BR>
-	3.HTTP协议：WEB浏览器与服务器之间的一问一答的交互过程必须遵循一定的规则，这个规则就是HTTP协议。<BR>
-					用于定义WEB浏览器与服务器之间交换数据的过程以及数据本身的格式。	<BR>
+4.Servlet 生命周期的方法：<BR>
+	1）构造器【类本身的。】：只有第一次请求Servlet时，创建Servlet实例，调用构造器。<BR>
+		这说明Servlet是单实例的！<BR>
+		<BR>
+	2）init方法：只被调用一次，创建好实例后立即被调用，用于初始化当前Servlet。<BR>
+	3）service：被多次调用，每次请求都会调用Service方法，实际用于响应请求。<BR>
+	4）destroy：只被调用一次，在当前Servlet所在的WEB应用被卸载时调用，用于释放当前Servlet所占用的资源。<BR>
 	<BR>
-	4.get和post方式<BR>
+	5）ServletConfig（init）【内部调用】：        （Servlet传递配置参数在 ServletConfig的一个对象内   ）<BR>
+  					①获取Servlet初始化参数：getInitParameter(java.lang.String name)     String user = config.getInitParameter(&quot;user&quot;);<BR>
+<BR>
+					②返回Enumeration对象（获取初始参数的key值   ，）：getInitParameterNames()    Enumeration&lt;String&gt; en =config.getInitParameterNames(); <BR>
+										测试此枚举是否包含更多的元素：boolean， hasMoreElements() <BR>
+						   				如果此枚举对象至少还有一个可提供的元素，则返回此枚举的下一个元素：E ，nextElement()    <BR>
+						      									      <BR>
+					③返回 Context对象： getServletContext()           ServletContext context = config.getServletContext();           <BR>
+									-1-ServletContext：<BR>
+											1）遍历WEB参数同上       1）、2）       WEB参数是全局参数，Servlet是局部参数<BR>
+											2）获取文件的绝对路径 ： String   getRealPath(String path）   String url = context.getRealPath(&quot;/hello.jsp&quot;);    <BR>
+											3) 获取当前Web应用的名称   getContextPath();       String webName = context.getContextPath();     <BR>
+																访问的文件夹的名字<BR>
+											4）获取目录下文件的输入流：getResourceAsStream(String path) <BR>
+	<BR>
+	6）getServletInfo（）【内部调用】：<BR>
+	<BR>
+	
+</DD>
+<DT>延升和重定向</DT>
+<!--property:date_created=1471090089-->
+<!--property:date_modified=1476254867-->
+<DD>
+	3.HTTP协议：WEB浏览器与服务器之间的一问一答的交互过程必须遵循一定的规则，这个规则就是HTTP协议。<BR>
+	用于定义WEB浏览器与服务器之间交换数据的过程以及数据本身的格式。	<BR>
+	<BR>
+	4.get和post方式【由页面决定】<BR>
 	1）是用GET方式传递参数<BR>
 		①。在浏览器中输入某个URL地址或单击一个超链接时，浏览器发出的HTTP请求方式为get。<BR>
 		②。<BR>
@@ -349,10 +360,13 @@ RRRQB//Z"><BR>
 			①：获取输出流，可以打印内容到客户端页面	        PrintWriter pw = res.getWriter();<BR>
 			②：设置输出的方式，                 res.setContentType(&quot;application/msword&quot;);          输出word	<BR>
 <BR>
-	7.请求的转发和重定向			：  <BR>
+<BR>
+<BR>
+<BR>
+	7.请求的转发和重定向		【页面触发  action实现】	：  <BR>
 			<BR>
-			请求转发：RequestDispatcher 接口           forward（）方法       RequestDispatcher reqDis = request.getRequestDispatcher(&quot;/&quot;+path);<BR>
-																										reqDis.forward(request, response);<BR>
+			请求转发：RequestDispatcher 接口           forward（）方法      ① RequestDispatcher reqDis = request.getRequestDispatcher(&quot;/&quot;+path);<BR>
+																	②			reqDis.forward(request, response);<BR>
 			请求重定向：		response.sendRedirect(path);																					<BR>
 <BR>
 		1）本质区别：请求的转发只发出了一次请求，而重定向则发出了两次请求。	<BR>
@@ -361,8 +375,8 @@ RRRQB//Z"><BR>
 		①.	请求的转发：地址栏是初次发出请求的地址。<BR>
 		    	请求的重定向：地址栏不再是初次发出的请求地址,地址栏为最后响应的那个地址。<BR>
 		<BR>
-		②.请求转发：在最终的 Servlet 中， request 对象和中转的那个 request 是同一个对象.<BR>
-			请求的重定向： 在最终的 Servlet 中， request 对象和中转的那个 request 不是同一个对象。	<BR>
+		②.请求转发：在最终的 Servlet 中， <span style="color:#ff0000">request 对象和中转的那个 request 是同一个对象.</span><BR>
+			请求的重定向： 在最终的 Servlet 中， <span style="color:#ff0000">request 对象和中转的那个 request 不是同一个对象</span>。	<BR>
 		<BR>
 		③.请求的转发：只能转发当前WEB应用的资源<BR>
 			请求的重定向：可以重定向到任何资源        response.sendRedirect(&quot;http://www.baidu.com&quot;);<BR>
@@ -387,7 +401,7 @@ RRRQB//Z"><BR>
 </DD>
 <DT>自定义Servlet</DT>
 <!--property:date_created=1471191185-->
-<!--property:date_modified=1471243864-->
+<!--property:date_modified=1476241345-->
 <!--property:expanded-->
 <DD>
 1My.GenericServlet<BR>
@@ -402,7 +416,7 @@ RRRQB//Z"><BR>
 1）继承了MyGenericServlet类 ，是一个Servlet。针对HTTp协议所定制<BR>
 2）在Service（）方法中直接把ServletRequest 和 ServletResponse 转为 HttpServletRequest 和 HttpServletResponse 。<BR>
 	并且调用了重载service（HttpServletRequest，HttpServletResponse）<BR>
-3）根据请求方式，再调用doPost（）或者doGet（）。<BR>
+3）根据请求方式【在Web页面决定】，再调用doPost（）或者doGet（）。<BR>
 	<BR>
 	<b><span style="color:#ff0000">实际开发中，直接继承HttpServlet，并根据请求方式复写doXXX（）方法接口</span></b><BR>
 <BR>
@@ -424,12 +438,21 @@ RRRQB//Z"><BR>
 1.访问直接跳过项目目录，直接访问WEbContent            /项目名   即为访问项目中的WebContent文件夹<BR>
 2.Servlet最常用的，直接继承HttpServlet实现类       类似于自定义的MyHttpServlet
 </DD>
+<DT>ServletRequest  接口</DT>
+<!--property:date_created=1476254691-->
+<!--property:date_modified=1476254714-->
+<DD>
+getParameter 是用来接受用post个get方法传递过来的参数的.<BR>
+getAttribute 必须先setAttribute.<BR>
+
+</DD>
 </DL>
 
 </DD>
 <DT>JSP</DT>
 <!--property:date_created=1471269793-->
 <!--property:date_modified=1471736661-->
+<!--property:expanded-->
 <DD>
 在很多动态网页中，绝大部分内容都是固定不变的，只有局部内容需要动态产生和改变。<BR>
 <BR>
@@ -458,23 +481,37 @@ JSP是简化Servlet编写的一种技术，它将Java代码和HTML语句混合�
 </DD>
 <DT>JSP相关属性</DT>
 <!--property:date_created=1471754087-->
-<!--property:date_modified=1471789449-->
+<!--property:date_modified=1476260018-->
 <DD>
 1.	JSP页面的隐含对象：<BR>
-		jspService（HttpServletRequest    request ， HttpServletResponse  response）中定义了如下变量        加上方法中的有八个， 另外加一个<BR>
-		PageContext pageContext=null；<BR>
-		HttpSession session = null；<BR>
-		ServletContext application = null；<BR>
+		jspService（HttpServletRequest    <span style="color:#ff0000">request</span> ， HttpServletResponse  <span style="color:#ff0000">response</span>）中定义了如下变量        加上方法中的有八个， 另外加一个<BR>
+		PageContext <span style="color:#ff0000">pageContext</span>=null；<BR>
+		HttpSession <span style="color:#ff0000">session</span> = null；<BR>
 		ServletConfig config = null；<BR>
-		JspWriter out = null；<BR>
-		Object page = this ；<BR>
+		ServletContext <span style="color:#ff0000">application</span> = null；	<BR>
+		JspWriter <span style="color:#ff0000">out</span> = null；		<BR>
+		Object <span style="color:#ff0000">page</span> = this ；<BR>
+		<BR>
+		pageContext：页面的上下文，可以从该对象中获取到其他8个隐含对象，也可以从中获取到当前页面的其他信息。（自定义标签使用）<BR>
+		request：封装上一个页面请求信息的对象<BR>
+		response：可写入响应请求对应的操作	（几乎不用）	<BR>
+		config：     servlet   初始化参数对象    （几乎不使用）<BR>
+		applocation：web全局参数  对象<BR>
+		session：代表浏览器和服务器的一次回话，是HttpSession 的一个对象。<BR>
+		out： out.println(&quot;&quot;);           直接打印在浏览器上<BR>
+		page：指向当前JSP对应的Servlet 对象的引用（几乎不用）<BR>
+		<BR>
+		exception：<BR>
+		<BR>
+		<BR>
 		<BR>
 		//使用&lt;% %&gt;编写的代码也在【从HttpServlet中继承的】service（）方法当中。		<BR>
 		<BR>
 2.JSP模版元素：JSP页面中的静态Html内容	<BR>
 <BR>
-3. JSP表达式提供了一将一个 java 变量或表达式的计算结果输出到客户端的简化方式。<BR>
+3. JSP表达式提供了一将一个 java 变量或表达式的计算结果输出到客户端的简化方式。（代替隐含变量 out）<BR>
 它将要输出变量或表达式直接封装的&lt;%=     %&gt;之中。<BR>
+<BR>
 &lt;%<BR>
 	String str = &quot;abc&quot;;<BR>
 	out.print(str);<BR>
@@ -496,16 +533,21 @@ if(age&gt;=18){<BR>
 5.JSP声明：JSP 声明将 Java 代码封装在&lt;%! 和 %&gt;之中，它里面的代码将被插入进 Servlet 的 _jspService 方法的外面<BR>
 （在JSP页面中几乎不这样使用）<BR>
 <BR>
-6.和属性相关的方法：(结合请求转发)<BR>
-1）.方法<BR>
+6.&lt;%-- JSP注释 --%&gt;           &lt;!-- HTML注释 --&gt;<BR>
+	JSP注释可以阻止代码的执行<BR>
 <BR>
- void setAttribute(String name, Object o)  ：设置属性<BR>
-Object getAttribute(String name) 	：获取指定的属性<BR>
-Enumeration getAttributeNames()  ：获取所有的属性的名字组成的 Enumeration 对象<BR>
- void removeAttribute(String name)  :移除指定的属性<BR>
+7.和属性相关的方法：(结合请求转发)<BR>
+1）.方法 （域对象都有这些方法）<BR>
 <BR>
+ void  <span style="color:#ff0000">setAttribute</span>(String name, Object o)  ：设置属性<BR>
+Object  <span style="color:#ff0000">getAttribute</span>(String name) 	：获取指定的属性<BR>
+Enumeration <span style="color:#ff0000">getAttributeNames</span>()  ：获取所有的属性的名字组成的 Enumeration 对象<BR>
+ void <span style="color:#ff0000">removeAttribute</span>(String name)  :移除指定的属性<BR>
+		<BR>
+		<BR>
 <BR>
-域对象： pageContext ， request ，session ， application<BR>
+2）域对象： pageContext ， request ，session ， application<BR>
+<BR>
 pageContext：属性的作用范围仅限于当前JSP页面<BR>
 request： 属性的作用范围仅限于同一个请求。      （<span style="color:#ff0000">在有转发的情况下可以跨页面获取属性值</span>）<BR>
 session： 属性的作用范围限于一次会话（浏览器打开直到关闭）【前提：在此期间会话不失效】   request.getSession()<BR>
@@ -519,6 +561,23 @@ application： 属性的作用范围限于当前 WEB 应用。                  
 <BR>
 <BR>
 
+</DD>
+<DT>JSP指令</DT>
+<!--property:date_created=1476260967-->
+<!--property:date_modified=1476261832-->
+<DD>
+JSP指令是为JSP引擎而设计的，它们并不直接产生任何可见的输出，而只是告诉引擎如何处理JSP页面中的其余部分。<BR>
+指令：page、include、taglib          每种指令中又都定义了一些各自的属性。<BR>
+<BR>
+如果要在一个JSP页面中设置同一条指令的多个属性，可以使用多条指令语句单独设置每个属性，也可以使用同一条指令<BR>
+语句设置该指令的多个属性。<BR>
+<BR>
+&lt;%@  JSP指令    %&gt;<BR>
+<BR>
+1.page   1）language ：唯一合法值   java<BR>
+		2）import ：自动导入的包  【】<BR>
+		3） session ：  值：“true”or “false”   当前页面是否允许使用 session    默认能使用<BR>
+		4）  
 </DD>
 </DL>
 
