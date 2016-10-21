@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:18-->
+<!--LastNote:9-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -71,6 +71,308 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <DD>
 系统自带myEclipse tomcat      或者自行下载配置加入 Myeclpse  tomcat中的服务器<BR>
 再或者在服务栏新建Server
+</DD>
+<DT>Html</DT>
+<!--property:date_created=1476667671-->
+<!--property:date_modified=1476935075-->
+<!--property:expanded-->
+<DD>
+超文本标记语言           大小写不敏感<DL>
+<DT>&lt;head&gt;</DT>
+<!--property:date_created=1476667712-->
+<!--property:date_modified=1476753733-->
+<DD>
+1. &lt;script&gt;：直接在页面嵌入代码，或者在src属性中 写入外部JavaScript文件。<BR>
+			（浏览器按照先后顺序依次进行解析）<BR>
+			<BR>
+2.&lt;link&gt; ：定义文档与外部资源的关系（一般用于链接外部样式表）<BR>
+			1）href ： 被链接文档的位置<BR>
+			2）rel ： 被链接文档与当前文档之间的关系   （stylesheet：样式表）<BR>
+			3）media ： 规定被链接文档将显示在什么设备上。<BR>
+<BR>
+3.&lt;meta&gt;： 定义文档的属性			
+</DD>
+<DT>&lt;body&gt;</DT>
+<!--property:date_created=1476684327-->
+<!--property:date_modified=1476942640-->
+<DD>
+标签的属性值  ：  使用单引号或者双引号都可以     属性总是以  名称/值对的形式出现<BR>
+				1）style 属性   用于改变Html 样式           <span style="color:#ff0000">CSS</span><BR>
+<BR>
+1.&lt;p&gt;标签：段落，换行加一段空白   ，相当于两个&lt;br/&gt;<BR>
+<BR>
+2.&lt;h1-6&gt;：标题标签<BR>
+<BR>
+3.&lt;ul&gt;：标签定义无序列表     配合&lt;li&gt;<BR>
+<BR>
+4.&lt;a&gt;：链接标签      --href  属性<BR>
+<BR>
+5.&lt;hr/&gt;   ：水平线<BR>
+<BR>
+6.&lt;br/&gt;：换行<BR>
+<BR>
+
+</DD>
+<DT>Html 表单</DT>
+<!--property:date_created=1476942726-->
+<!--property:date_modified=1477016758-->
+<DD>
+HTML 表单用于搜集不同类型的用户输入。<BR>
+<BR>
+1.&lt;form&gt;元素 定义Html 表单<BR>
+			1）action：表单处理程序<BR>
+			2）method ： 提交表单时所用的HTTP方法（GET或POST）<BR>
+								GET 提交的数据在地址栏可见<BR>
+			3）name： 识别表单的名称					<span style="color:#ff0000"><BR>
+			<BR>
+</span><span style="color:#000000">3.&lt;fieldset&gt;元素：表单分组<BR>
+			&lt;legend&gt;：子标签     用于显示分组标题<BR>
+			<BR>
+4.表单元素：  可以不放在表单中<BR>
+				1）&lt;input&gt;元素   有各种不同的形态 ，根据type属性<BR>
+						①text：文本输入框   ,单行输入<BR>
+		                 	 	②radio： 单选按钮         相同的name  ， 不同的value       有checked属性，默认选中<BR>
+						③submit：用于向表单处理程序 ， 提交表单的按钮 <BR>
+									表单处理程序在表单的  action属性中指定<BR>
+									</span><span style="color:#ff0000">只提交设置了name属性的元素						</span><span style="color:#ff0000">	<BR>
+						</span>④password：定义密码字段	<BR>
+						⑤checkbox： 复选框    相同的name    不同的value<BR>
+						⑥ button ：定义可点击的按钮	有Value属性值。<BR>
+								 ----&lt;input&gt;标签属性：<BR>
+											1）value ： 规定输入字段的初始值<BR>
+											2）readonly：规定输入字段为只读<BR>
+											3）disabled：规定输入字段是禁用的 （不可用、不可点击、不会被提交）<BR>
+											4）maxlength：规定输入字段允许的最大长度<BR>
+						<span style="color:#ff0000">												</span><span style="color:#000000"><BR>
+				2）&lt;select&gt;元素  ：下拉列表<BR>
+								①子元素：&lt;option value=&quot;a&quot;&gt; a【显示的值】 &lt;/option&gt;<BR>
+												selected 属性： 可以添加selected 来定义预定义选项【没有值，只加入】<BR>
+												value 属性：<BR>
+										<BR>
+				3）&lt;textarea&gt;元素： 定义多行输入字段（文本域）<BR>
+				4）&lt;button&gt;元素：定义可点击的按钮	没有Value属性 ，文本值定义在文本节点内	<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+											      </span><span style="color:#ff0000">			</span>
+</DD>
+<DT>CSS</DT>
+<!--property:date_created=1476673289-->
+<!--property:date_modified=1476673373-->
+<DD>
+CSS是由选择器加声明组成的。<BR>
+<BR>
+1.h1{color：red;}     遇到h1，就使用该CSS的规则<BR>
+<BR>
+2.
+</DD>
+</DL>
+
+</DD>
+<DT>JS</DT>
+<!--property:date_created=1476683387-->
+<!--property:date_modified=1476686647-->
+<!--property:expanded-->
+<DD>
+1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
+	1）通过&lt;script&gt;标签嵌入<BR>
+	2）引入外部脚本<BR>
+	3）在HTML属性中直接嵌入<BR>
+	<BR>
+	&lt;script&gt;标签嵌入的脚本和外部引入的脚本可以放在&lt;head&gt;标签和&lt;body&gt;标签的任意位置。<BR>
+<BR>
+2.	<BR>
+<BR>
+<DL>
+<DT>语法基础</DT>
+<!--property:date_created=1476687138-->
+<!--property:date_modified=1477040208-->
+<DD>
+1.var：定义变量   区分大小写      var  age = 13；    未赋值的默认值为  undefined<BR>
+<BR>
+2.Math：.round()四舍五入     floor（）向下取整     ceil（）向上取整      random（）0-1随机数<BR>
+<BR>
+3.字符串： 双引号 “ ” 或者 单引号  ‘’      长度通过   a.length   获取<BR>
+<BR>
+4.new Array（）定义数组<BR>
+<BR>
+5.支持函数的递归：  函数内调用函数自身<BR>
+<BR>
+6.对象字面量： 对象字面量是一个 名/值 对列表，   每个对之间用<span style="color:#ff0000">逗号</span>分隔 ，最后用一个大括号括起来。（可嵌套，可加入方法）<BR>
+		var  a = {a:3 ，  b：4 ， c：5 }      a.a =3<BR>
+		<BR>
+7. JavaScript 可以在定义类时定义属性和方法，也可以在创建对象以后动态添加属性和方法。	<BR>
+<BR>
+8.遍历对象：	 for(Value in ...){}<BR>
+<BR>
+9.访问对象的属性和方法： . 或者【】<BR>
+<BR>
+10.类  ：  JavaScript  使用函数来定义类         fuction Person（）{} <BR>
+<BR>
+11.fuction   ：   可以带方法名，也可以用匿名<BR>
+					onlick = function hello（）{}       ；    onlick = function（）{}        ；  赋值的是引用<BR>
+<BR>
+12.方法带方法名，直接执行    例：onclick = hello；         onlick = hello（）；<BR>
+								onclick =alert();  已经执行 <BR>
+<BR>
+13.方法也是一个对象    ？                               onclick = { alert（i）;}     点击时调用，i已经是结果值     <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</DD>
+<DT>常用标签</DT>
+<!--property:date_created=1476686686-->
+<!--property:date_modified=1476930174-->
+<!--property:expanded-->
+<DD>
+1.alert:  onclick=&quot;alert('  ....  ')&quot;   警告框<BR>
+<BR>
+2.doucument.write(&quot;显示内容&quot;)<BR>
+<BR>
+3.
+</DD>
+<DT>事件</DT>
+<!--property:date_created=1476692171-->
+<!--property:date_modified=1476762422-->
+<DD>
+JavaScript所支持的事件：<BR>
+	1）窗口事件<BR>
+	2）表单元素事件<BR>
+	3）图像事件<BR>
+	4）键盘事件<BR>
+	5）鼠标事件<BR>
+	<BR>
+1.	windows.onload    加载完后获取页面节点
+</DD>
+<DT>对象</DT>
+<!--property:date_created=1476779191-->
+<!--property:date_modified=1476933281-->
+<DD>
+1.Window对象   ：表示打开的窗口      有属性和方法<BR>
+<BR>
+2.Document： Window对象的一个属性  ，表示当前显示的文档<BR>
+<BR>
+3.Node :节点  三个属性： nodeName 、 nodeValue 、 nodeType           任何节点都有这三个属性<BR>
+					1）文本节点： #text 、 文本值 、 0<BR>
+					2）元素节点：标签名（li）、null 、 1<BR>
+					3）属性节点：属性名 、 属性值 、 2<BR>
+				以上属性只有NodeValue 可以被读写，
+</DD>
+<DT>JsDOM</DT>
+<!--property:date_created=1476752880-->
+<!--property:date_modified=1476777924-->
+<!--property:expanded-->
+<DD>
+页面按顺序执行<BR>
+1.	windows.onload = function(){}   加载完成后执行<DL>
+<DT>获取节点</DT>
+<!--property:date_created=1476777934-->
+<!--property:date_modified=1476932864-->
+<DD>
+1.获取元素节点：<BR>
+		1）document.getElementById（）   返回对拥有指定 id 的第一个对象的引用<BR>
+				该方法为document 方法		var cityNode = document.getElementById(&quot;city&quot;);<BR>
+		2）document.getElementByTagName（） 返回带有指定标签名的对象集合    <BR>
+				Node接口的方法，<span style="color:#ff0000">任何一个节点都有这个方法</span><BR>
+		3）document.getElementByName（）  返回带有指定名称的对象集合<BR>
+		<BR>
+			①若HTML元素本身没有定义 name属性， 则getElementByName方法 <BR>
+		对于IE无效，对于火狐  Google有效。<BR>
+			②获取元素节点后，可操作节点中的属性<BR>
+			<BR>
+		4）cityNode.childNodes.length       获取节点的所有子节点<BR>
+		5）cityNode.firstChild       获取指定节点的第一个子节点<BR>
+				cityNode.lastChild       获取指定节点的最后一个节点<BR>
+				<BR>
+2.获取文本节点：   文本节点一定是元素节点的子节点。      &lt;li id = &quot;bj&quot;&gt;北京&lt;/li&gt;<BR>
+		1）获取文本节点所在的元素节点 <BR>
+				var bjNode  = document.getElementById(“bj”);<BR>
+		2）获取文本节点<BR>
+				var bjTextNode = bjNode.firstChild ；<BR>
+		3）通过操作文本节点的属性 nodeValue 来读写文本节点的值。<BR>
+				bjTextNode.nodeValue = “。。。”;<BR>
+<BR>
+3.属性节点：				<BR>
+				<BR>
+				<BR>
+				<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+				  <BR>
+			
+</DD>
+<DT>添加节点</DT>
+<!--property:date_created=1476933717-->
+<!--property:date_modified=1476934236-->
+<DD>
+1.	1）创建元素节点：document.createElement（&quot;li&quot;）  参数，被创建元素的名字   返回元素节点<BR>
+	2）创建文本节点： createTextNode（“”）   参数，所包含的文本字符串。    返回文本节点<BR>
+	<BR>
+2.添加节点到父节点中：appendChild（）方法	            父节点.appendChile(子节点)<BR>
+<BR>
+3.
+</DD>
+</DL>
+
+</DD>
+</DL>
+
+</DD>
+<DT>JQuery</DT>
+<!--property:date_created=1477018362-->
+<!--property:date_modified=1477018362-->
+<DT>Ajax</DT>
+<!--property:date_created=1476664888-->
+<!--property:date_modified=1476665319-->
+<DD>
+现在，允许浏览器与服务器通信而无须刷新当前页面的技术都被叫做Ajax。<BR>
+<BR>
+
 </DD>
 <DT>Servlet</DT>
 <!--property:date_created=1470040159-->
@@ -609,291 +911,6 @@ JSP指令是为JSP引擎而设计的，它们并不直接产生任何可见的�
 </DL>
 
 </DD>
-<DT>Ajax</DT>
-<!--property:date_created=1476664888-->
-<!--property:date_modified=1476665319-->
-<DD>
-现在，允许浏览器与服务器通信而无须刷新当前页面的技术都被叫做Ajax。<BR>
-<BR>
-
-</DD>
-<DT>Html</DT>
-<!--property:date_created=1476667671-->
-<!--property:date_modified=1476935075-->
-<!--property:expanded-->
-<DD>
-超文本标记语言           大小写不敏感<DL>
-<DT>&lt;head&gt;</DT>
-<!--property:date_created=1476667712-->
-<!--property:date_modified=1476753733-->
-<DD>
-1. &lt;script&gt;：直接在页面嵌入代码，或者在src属性中 写入外部JavaScript文件。<BR>
-			（浏览器按照先后顺序依次进行解析）<BR>
-			<BR>
-2.&lt;link&gt; ：定义文档与外部资源的关系（一般用于链接外部样式表）<BR>
-			1）href ： 被链接文档的位置<BR>
-			2）rel ： 被链接文档与当前文档之间的关系   （stylesheet：样式表）<BR>
-			3）media ： 规定被链接文档将显示在什么设备上。<BR>
-<BR>
-3.&lt;meta&gt;： 定义文档的属性			
-</DD>
-<DT>&lt;body&gt;</DT>
-<!--property:date_created=1476684327-->
-<!--property:date_modified=1476942640-->
-<DD>
-标签的属性值  ：  使用单引号或者双引号都可以     属性总是以  名称/值对的形式出现<BR>
-				1）style 属性   用于改变Html 样式           <span style="color:#ff0000">CSS</span><BR>
-<BR>
-1.&lt;p&gt;标签：段落，换行加一段空白   ，相当于两个&lt;br/&gt;<BR>
-<BR>
-2.&lt;h1-6&gt;：标题标签<BR>
-<BR>
-3.&lt;ul&gt;：标签定义无序列表     配合&lt;li&gt;<BR>
-<BR>
-4.&lt;a&gt;：链接标签      --href  属性<BR>
-<BR>
-5.&lt;hr/&gt;   ：水平线<BR>
-<BR>
-6.&lt;br/&gt;：换行<BR>
-<BR>
-
-</DD>
-<DT>Html 表单</DT>
-<!--property:date_created=1476942726-->
-<!--property:date_modified=1476954073-->
-<DD>
-HTML 表单用于搜集不同类型的用户输入。<BR>
-<BR>
-1.&lt;form&gt;元素 定义Html 表单<BR>
-			1）action：表单处理程序<BR>
-			2）method ： 提交表单时所用的HTTP方法（GET或POST）<BR>
-								GET 提交的数据在地址栏可见<BR>
-			3）name： 识别表单的名称					<span style="color:#ff0000"><BR>
-			<BR>
-</span><span style="color:#000000">3.&lt;fieldset&gt;元素：表单分组<BR>
-			&lt;legend&gt;：子标签     用于显示分组标题<BR>
-			<BR>
-4.表单元素：  可以不放在表单中<BR>
-				1）&lt;input&gt;元素   有各种不同的形态 ，根据type属性<BR>
-						①text：文本输入框<BR>
-		                 	 ？	②radio： 单选按钮   <BR>
-						③submit：用于向表单处理程序 ， 提交表单的按钮 <BR>
-									表单处理程序在表单的  action属性中指定<BR>
-									</span><span style="color:#ff0000">只提交设置了name属性的元素</span><span style="color:#000000"><BR>
-				2）&lt;select&gt;元素  ：下拉列表<BR>
-								①子元素：&lt;option value=&quot;a&quot;&gt; a &lt;/option&gt;<BR>
-												selected 属性： 可以添加selected 来定义预定义选项【没有值，只加入】<BR>
-										<BR>
-				3）&lt;textarea&gt;元素： 定义多行输入字段（文本域）<BR>
-				4）&lt;button&gt;元素：定义可点击的按钮		<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-											      </span><span style="color:#ff0000">			</span>
-</DD>
-</DL>
-
-</DD>
-<DT>CSS</DT>
-<!--property:date_created=1476673289-->
-<!--property:date_modified=1476673373-->
-<DD>
-CSS是由选择器加声明组成的。<BR>
-<BR>
-1.h1{color：red;}     遇到h1，就使用该CSS的规则<BR>
-<BR>
-2.
-</DD>
-<DT>JS</DT>
-<!--property:date_created=1476683387-->
-<!--property:date_modified=1476686647-->
-<!--property:expanded-->
-<DD>
-1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
-	1）通过&lt;script&gt;标签嵌入<BR>
-	2）引入外部脚本<BR>
-	3）在HTML属性中直接嵌入<BR>
-	<BR>
-	&lt;script&gt;标签嵌入的脚本和外部引入的脚本可以放在&lt;head&gt;标签和&lt;body&gt;标签的任意位置。<BR>
-<BR>
-2.	<BR>
-<BR>
-<DL>
-<DT>语法基础</DT>
-<!--property:date_created=1476687138-->
-<!--property:date_modified=1476930238-->
-<DD>
-1.var：定义变量   区分大小写      var  age = 13；    未赋值的默认值为  undefined<BR>
-<BR>
-2.Math：.round()四舍五入     floor（）向下取整     ceil（）向上取整      random（）0-1随机数<BR>
-<BR>
-3.字符串： 双引号 “ ” 或者 单引号  ‘’      长度通过   a.length   获取<BR>
-<BR>
-4.new Array（）定义数组<BR>
-<BR>
-5.支持函数的递归：  函数内调用函数自身<BR>
-<BR>
-6.对象字面量： 对象字面量是一个 名/值 对列表，   每个对之间用<span style="color:#ff0000">逗号</span>分隔 ，最后用一个大括号括起来。（可嵌套，可加入方法）<BR>
-		var  a = {a:3 ，  b：4 ， c：5 }      a.a =3<BR>
-		<BR>
-7. JavaScript 可以在定义类时定义属性和方法，也可以在创建对象以后动态添加属性和方法。	<BR>
-<BR>
-8.遍历对象：	 for(Value in ...){}<BR>
-<BR>
-9.访问对象的属性和方法： . 或者【】<BR>
-<BR>
-10.类  ：  JavaScript  使用函数来定义类         fuction Person（）{} <BR>
-<BR>
-11.fuction   ：   可以带方法名，也可以用匿名<BR>
-<BR>
-12.方法带方法名，直接执行    例：onclick = <BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-
-</DD>
-<DT>常用标签</DT>
-<!--property:date_created=1476686686-->
-<!--property:date_modified=1476930174-->
-<!--property:expanded-->
-<DD>
-1.alert:  onclick=&quot;alert('  ....  ')&quot;   警告框<BR>
-<BR>
-2.doucument.write(&quot;显示内容&quot;)<BR>
-<BR>
-3.
-</DD>
-<DT>事件</DT>
-<!--property:date_created=1476692171-->
-<!--property:date_modified=1476762422-->
-<DD>
-JavaScript所支持的事件：<BR>
-	1）窗口事件<BR>
-	2）表单元素事件<BR>
-	3）图像事件<BR>
-	4）键盘事件<BR>
-	5）鼠标事件<BR>
-	<BR>
-1.	windows.onload    加载完后获取页面节点
-</DD>
-<DT>JsDOM</DT>
-<!--property:date_created=1476752880-->
-<!--property:date_modified=1476777924-->
-<!--property:expanded-->
-<DD>
-页面按顺序执行<BR>
-1.	windows.onload = function(){}   加载完成后执行<DL>
-<DT>获取节点</DT>
-<!--property:date_created=1476777934-->
-<!--property:date_modified=1476932864-->
-<DD>
-1.获取元素节点：<BR>
-		1）document.getElementById（）   返回对拥有指定 id 的第一个对象的引用<BR>
-				该方法为document 方法		var cityNode = document.getElementById(&quot;city&quot;);<BR>
-		2）document.getElementByTagName（） 返回带有指定标签名的对象集合    <BR>
-				Node接口的方法，<span style="color:#ff0000">任何一个节点都有这个方法</span><BR>
-		3）document.getElementByName（）  返回带有指定名称的对象集合<BR>
-		<BR>
-			①若HTML元素本身没有定义 name属性， 则getElementByName方法 <BR>
-		对于IE无效，对于火狐  Google有效。<BR>
-			②获取元素节点后，可操作节点中的属性<BR>
-			<BR>
-		4）cityNode.childNodes.length       获取节点的所有子节点<BR>
-		5）cityNode.firstChild       获取指定节点的第一个子节点<BR>
-				cityNode.lastChild       获取指定节点的最后一个节点<BR>
-				<BR>
-2.获取文本节点：   文本节点一定是元素节点的子节点。      &lt;li id = &quot;bj&quot;&gt;北京&lt;/li&gt;<BR>
-		1）获取文本节点所在的元素节点 <BR>
-				var bjNode  = document.getElementById(“bj”);<BR>
-		2）获取文本节点<BR>
-				var bjTextNode = bjNode.firstChild ；<BR>
-		3）通过操作文本节点的属性 nodeValue 来读写文本节点的值。<BR>
-				bjTextNode.nodeValue = “。。。”;<BR>
-<BR>
-3.属性节点：				<BR>
-				<BR>
-				<BR>
-				<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-				  <BR>
-			
-</DD>
-<DT>添加节点</DT>
-<!--property:date_created=1476933717-->
-<!--property:date_modified=1476934236-->
-<DD>
-1.	1）创建元素节点：document.createElement（&quot;li&quot;）  参数，被创建元素的名字   返回元素节点<BR>
-	2）创建文本节点： createTextNode（“”）   参数，所包含的文本字符串。    返回文本节点<BR>
-	<BR>
-2.添加节点到父节点中：appendChild（）方法	            父节点.appendChile(子节点)<BR>
-<BR>
-3.
-</DD>
-</DL>
-
-</DD>
-<DT>对象</DT>
-<!--property:date_created=1476779191-->
-<!--property:date_modified=1476933281-->
-<DD>
-1.Window对象   ：表示打开的窗口      有属性和方法<BR>
-<BR>
-2.Document： Window对象的一个属性  ，表示当前显示的文档<BR>
-<BR>
-3.Node :节点  三个属性： nodeName 、 nodeValue 、 nodeType           任何节点都有这三个属性<BR>
-					1）文本节点： #text 、 文本值 、 0<BR>
-					2）元素节点：标签名（li）、null 、 1<BR>
-					3）属性节点：属性名 、 属性值 、 2<BR>
-				以上属性只有NodeValue 可以被读写，
-</DD>
-</DL>
-
-</DD>
 </DL>
 
 </DD>
@@ -1409,9 +1426,9 @@ jjrXqMJna3jaVBHKVBdA24KccjPGee9D2C2pZrG1zVE0jS5rt1ZiuFVEBJdicKoHqTxUMGsX
 knjK60c2kf2KGyS4Fyr5bezEbSO3AzWxcrut3BGRiomnyuxVNpTV1dXPE2tbu4sNOvTaXWZ5
 WuppY9QWBXZmbcFUsCGGQN3tXQ+BYry11q4cWV48U7ks76kkyxqQMF1DEs2Vxu96x5rSeXT/
 AA4IrKe4YWtzlIraOcj51/hkwv49a3/AdvNB4g1bzrSe2Y2tvhZLeOAkb5P4YyR+PWuenH39
-v6sejVmpU5ar01vv9xieM4lfWvEzt/Z7FLRMC4TdL9xv9Wex/wDrVpXg1a0126uodViD2umG
+v6sehVmpU5ar01vv9xieM4lfWvEzt/Z7FLRMC4TdL9xv9Wex/wDrVpXg1a0126uodViD2umG
 dd1qDtUkYTr6r19qk8QeHdTvbvW7650+3+z3CLGmyP7RcbVBGYxgBSc9SeMc0jabrX2C4tLi
-xu59Q1iNIWmjCeVaxL8oVjnggEscAgk0KEru6ZTqw5FZrZJ7Por9C7qurS7rdEhNzqM1rHJ5
+xu59Q1iNIWmjCeVaxL8oVjnggEscAgk0KEru6Zbqw5FZrZJ7Por9C7qurS7rdEhNzqM1rHJ5
 aDaoJXJZj0AzXM2sGr2l0t3FpU5upD/pTyXUW2UdegPBHb9a6fxnbwhwh0iTUNgxHGgyFIGB
 nkYFcpa6NF/Z4x4ele7Vsu12qoGzyQvz5A7A9q69W/Q56bpqF7bs6GLUkvbGaS2t5JZEyr27
 gI27up3cf0rGSKK5sUaGz0+2hjldGjvx5nltu5CkHAHsOK3rARrYRLDbtbR4wImGCmO1c7Np
@@ -1441,10 +1458,10 @@ Crt02+qIqYaEakYxvZv5/caC+O9J+zXMzRX0ZtzGHjktHV/3jFVwp5OSO1X9F8Q2mtvcxwRX
 MT2+3zFuIGiIznHDfSvJhp+pXUFzcwq8toTF5zy3TCWTa2VK7juXackcjOeK6PwTc273eqWo
 upJLiWFTK26ZpI8Ajl3GFwD0B61nSxEpOzOqtgacIOUXdr8Njt7bxDaXGpXVirkSWziPcxAV
 227iq+pAxn0zRY+KNIv0tzDdqXuRmKIj5zyRyvUdO9eQacIpLzTQJZwZLwEKLiYlGLHLZZdh
-PHPPOa6Lw8LiztdLtLU6fbx3NypN3bzHzrlQ5JBTZnnGDngDrVU60ptHPWw0Kaeuv3HocuuW
+PHPPOa6Lw8LiztdLtLU6fbx3NypN3bzHzrlQ5JBTZnnGDngDrVU60ptHNWw0Kaeuv3HocuuW
 lvq50yWTZN5Hn7mIC7d23GSeuarXPirR7LUo7O6vYonkhMqszALtBx1z37fQ15/rCyN40vI9
 Vs7C5DmNI/MUu8cZVyu3PfIJP1FYWntYwxWS3NrfSWUloj6gRiV3QAFflzmOPqM8EjP1p+2l
-expHBRcFNtvS+lux7LqusW+laJLqbbpoEQOPLIywPTHbvVO98Y6Dp8rQ3d/HFKqqzIVYkBum
+exrHBRcFNtvS+lux7LqusW+laJLqbbpoEQOPLIywPTHbvVO98Y6Dp8rQ3d/HFKqqzIVYkBum
 cDvXOePbrTbjwnDL9purZpIRJb28bNHvU4++g7AY69DXOzG5WW9tItP1WeR0s5AGQzSKqOzf
 Ow6EjoPwpTrSU3FeRFHCU501OV931S7d/U9RtPEGmalaTXdpdpJBASsrgEbCBkg5HpVAeOvD
 rqCL4spGQRC5BH/fNZOj+efDfiGea1uLYXE80yJPEY32mIYOD9K8wunubONRHDD5KW8LjzBN
@@ -1459,8 +1476,8 @@ PTPlP/8AE1p6dqVrq1kl3ZTLNbuSAV6Eg4PX3rzq11We5uLNW1jxBHHcyIkMsunRJG5bkfNs
 scUalpHPYCo9Ov7bVLCG9tH8y3nQOjYxkGvO9d1yTVrow3F5p2nW1vL81jey/vJsdC4U/Kuc
 Hb378VDpOsTaPqDtaX2l3tvPKD/Z1nMQ4Y9WiDHGT1Kd+o5qParm8jRUH7O/X8PvPQ7nULGy
 uYILieOKSXIiVuNxHYf4Vhz+PNDgmWOOWe4mdigjgtpHfIz2xml168v7e6sJPs9o1nLcQxss
-6EyK7NjcOwI4xXHa1cNFrNtA/iTUJpbW4PmsLRW8j5D8w2pgnkDv1qZzlHb+vxNKNGM/i7d/
-+AeoWF619p8dy9tNbM4z5U6gOv1FVtR1WDT5rNJFZjczCFSuOCQTk57cVis7HwFdXA1SbUFm
+6EyK7NjcOwI4xXG61cNFrNtA/iTUJpbW4PmsLRW8j5D8w2pgnkDv1qZzlHb+vxNKNGM/i7d/
++Aeo2F619p8dy9tNbM4z5U6gOv1FVtR1WDT5rNJFZjczCFSuOCQTk57cVis7HwFdXA1SbUFm
 tmliuZEVDtK8cKBj+dcRcf8ACIm20YpHc7zNH9pJ+0crtOcZ9/7vNFSq46ehnSoxk3e9rtaL
 y8z1eXTrS7kaV8lj1wazUi0p9Sk04M/2iOITMADgKSQMnpnjpXP+FBpDeLL1NG85LX7DEWSQ
 y/f8xskCTnpiuUlEX9qrNaWV0uovquxbpxIIWHmEKhbOOOOMU3XkkmjSnQi5Si21ZLdJb99T
@@ -1475,7 +1492,7 @@ vVRkDKr1Oe/1rImvLrUNPubq8ZTPNooclU2AgzHbxk44xT9rLX+v1GsNTcYuzTdr69/l+p6Z
 qGo2ljbJcXDHYzoi7VLEsxAGAPrTp9Vtre+trJixmuAxQKpIAUZJJ7Dp+dcX4tSzm8Q6dHfW
 F3cwC1kdYbYOzBgUw2FIPHPPvWBomnwXFlpt7rsElxZ3CG1tHW4dfJO9iN+CDlzxnJAwB3pO
 tJSasUsLT5FKUn6adb2tr0tqetzziC2knbeURSx2KWJA9AOSaw5/GOjW9nDdNdbo5kMke1GO
-4DqOBwc8YPeqvhyG6k8FIljOIHMkvlSSKZNq+Y2MgnJ4461wWq3dzc6Na3F7LbuslzPCsUNu
+4DqOBwc8YPeqvhyG6k8FIljOIHMkvlSSKZNq+Y2MgnJ4461wWq3dzc6Pa3F7LbuslzPCsUNu
 IwHVnBfJkA5x371NatKMbx7DwmFhUquE3onbTc9M0TxXpmvCNbWZhK8fmGN0YEDvk4x+Rroe
 e/SvJ/h0rHVXhtpBGkESearqrmVSSBhlkIBBGelesnOa1oTc4KTMsbQhRqyhT28yneyrHLZb
 okcvcbQW/gO1uR78Y/Gr3aqV7KI5LMGNHLz7QWH3flY5Hvx+tXa2ONBRRRSGUNRgM4tdrouy
@@ -1484,77 +1501,77 @@ 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
-bQKYo1bJH3iD0B7UXglZt/iC9q2ppK79Nb6Bb6Hq1z4gtdQ1i8tpfsYYwxW0RRSzDBZiSTwO
-g96xrjw/rcixJ/Z8bS3WoC9nlEyYgVWGE9W+VRyO5rotb8WwaJHbtLY3Mwmhaf8AchSURQCS
-ckdMisq+8bq2pW0NlBeyW8czC8lSykkAAB+VcDk5I5HSlL2e1zan9Y0koq1vlp6GXpfhfWoz
-p929lGjWKgPbyTLm6IZmBBUlV27srnqeuBzXX6pb6zdmOOySziiKgvJcAu8Z9Ag4PHv+dW9I
-1211ezlurfzfLidkcSwtGwYdRtbmucu/HSNBDNpen31wpkBdTYTAPGepVsYz3569Kq0IRtfQ
-ycqtSd2ldfhf1H3vhS5i0s6bYLbypdsWvLy4bbLkkbmVQuOgwBkAcVreJdOub/wtcWVtCrzu
-qqiMQAcMOue2BUumeJLbVLo20NvfxybS2Z7KWJeP9phj8KqDxNDZy3Metx/YmhkCpKctHKrZ
-2lWx145HYj6UNU7NdGRzVXJaXad/M5K48G6wF1GJLOxIna0KCGJUiOyUltyE84BBPr2rpfCu
-g3+lS6st3DbRpcNGYzboEjICYOFzkc+tQy+PtL/t6ytoLyBrSVZPNfa2QwxtHTuSasa54j1D
-TNUt7WCxgeO4ZY45pLkKAxBPzLjOOOtRFU17yfkdNSdeaUGkrq/bb/hjBtPAFxbPpbJa2SSQ
-yiW6uRO5YkMxwq4wQQR6VNofhfXdFjS3tbfS4CZh518srNM8e/J+UrjkcYzirH/CYat9ouY4
-NIiuFtZPKeX7WkQLBQSQrDOOa6a0163n8P2+rzmO1imiV/3rjCk9ATVQjT3iZVZ1krTs7/PU
-xPE3httQuGvLCxsZdQkAQ3FwzKYwAwBGAckbjxxmqml/D6O3uITepbi0tj+6ggDZl6fNM7cs
-MgHZ0GB1xUx+IlimjSTNLafbo5PJ8lbgFGcnghv7hHOewrpE1SK/0uW402e3uHUYBWTcm7HQ
-kUJQu5LUTnWjFQei2Mrxlaahf6DLYafYfanuP3ZbzlTyhn7x3dRx0FV5bDW7DX7m+0yCzuIr
-mGJGE87RlCm7phTkHNYFj8QNQvAvmnToUktXnMgleTyiCFCuoHUsR+Ga2fD/AI1ttZ1aO1Dw
-xBolAXJZnmOdyqehCgdff60lKlKV09WU41qcHFpOKvffrb/IWbS/El1Yaubg2y3N8iQQwRTs
-0cKYKs+WAy3zE4x2HNc/N8Pr67W6txZwRB5WWKeaZmKRqECYRTgg4brgiuk8Q+Ll0bVLSxSC
-5YtMqzFbWR1KFScIQMFuBwM96bqninVtOWa8GiF9PjUP5zXKo5U458sjIPPQ80SjSe/QujUr
-07OFlfVdNtEUfCnhfUdC8TSzSRILTyWxMshw7MQdoUknC4OCe1dZrtxewaexsLFr2VvlMayr
-GQD3y3FR67rv9g6aLySyubmMH5/J2/IPU5I4rmY/HGpHW5LdtBvDCsCyiMLH5gyxG4nfjbx9
-ar3ILlTIarYiftZJO3d72Oo8L2M+neGdPsrpFWeKELIqtuAPpnvWZrGnS3virTj5MhtvslzH
-LIo4QttABPqecfStbRNV/tjTEvBaz2ytyiThdzL2YbSRg9q1u9acqlG3Q5/aSjOUnvr+JwU/
-g2extLaSG91LUhYPHJb2UkkKKSnAG7aOgz1Nb/hKwudO0GKC9i8qcySyPGHDbN8jNjI4PXtX
-QUZojBRd0Eqs5xtICBnoKBgdBRRVGR594j0jXdT1dRDZ2EunxuHKSzsjTEDKh8IcAHtnnitK
-Oy1uLUYLryrSSHKrLbJ/D/tIxHBHcd/auu7YpAcVCppO9zf6xNxUbKyVjE8R6PcazZQw2t0l
-tNFPHMJGj3gbTnpkVzdr4Z8QW1xeGLW0jjnl3jdbLIz/ACAFmPAByOgr0GkpSpRk7sKeJqU4
-8sbW80n+Zg6JpT6f4WsdLvFileKBY5QPmRvXqOR+FQa3pU1zcaR9mhUpb3iSOAwARACMgH+Q
-rpqKrlVrGaqyUubrr+Jn/Y4hIZRGgmKhDJtG4qDnGeuPauOg8G6sLyJpNTgW2j1H7YLcRZ43
-lvv8HJ9MYr0DijPtRKEZNN9BxrTiml18jj7vRNVvtdtJboWIsraYT+ZHkSvtzsQgjGATnOfw
-rsMfjS0ZoUVHYmU3NK/QTA9BWZqtve3Fi8djcpbTtgCVo9+0d8D19K1KKbV1ZiTad0cTJ4Q8
-iTSvs0hkFvem6upZ3JeYmNlJJxyckccAAVpWeg/2fqbXVrcFbV4yGtXXcFbPVGPKj1Xp9K6S
-l7UuSPQ0dabVmzjNS0S+8S3zWuowxQaTFIG2g7pbkjBHP8C+vc9OKr+K9DuJYSulaWZ5rmEW
-rSC4WNYUDBh8p6/hzxXdUbs0nTi1YFWmmmtl06HGavoOqXut2V9Z38dqsNs8TuYxISWKkAKe
-P4euaZFoWtaZ4btNOsWsLuSFWDfaQyKWLFlYYBxjPTH4iu1J4pM5odOOvmP6xOyWll5f13Mv
-Q9MGj6HZadu3mCIKzf3m6k/ic1xh+H1y/wBnhudRM1ql3LMVjJgMatvI2kZJOWGcnoK9I7Un
-aiVOMt0FKvOm3KDs2cT4W8L3Oh63e3cgRbeaNI4l+0vM5Csx3EsBjgjgZruKAaKcIKC5UTVq
-zqy557lK+m8mWzGxG33AX5hnHyscj34q72qlfTmGWyUKh8y4CfMM4+Vjx78VeIxVvYyQlFFF
-IZQ1GETfZMyRpsuUf5++Ow96v1Q1GFZjabpUj2XKONx+8R2HvV/oKb2EgqOZo44naVlWMD5i
-xwAKkqCaGO4heKaNXjdSrKwyGB6gikylvqeXa/LFcWN1Fos8klkJ4FRnjLQxTecuAjk8j1UZ
-Ax1HSuk8N24n1K5ur+eSTUo8wtbOAgtlz0VR1DYzv7jFXda8Pz6p9ltobxLWxikjd7dIAS2x
-ww2tn5RwB0rVfTbSW7gu2gBuIidkoJDDPUZHUex4rKFNqVzqqYlOmoLz9em7PNvG9pZ6hrcK
-6cGa4+1wRXc5nkKIzHCptDAZ7kDBA9M1XBjstG8VW00f2WU6ZEohklLksBJnaWJLA9R9a9G1
-LQre+FusW23EN5HdtsQfOytk5+vrVDUfBOlapNqE11GHmvIUhDlFJh2gjchI4PP6CplSd21u
-7/kKGIjyKEr2VvzTOZ8au/lWRWC5mEmnTxAwwtJgsqYJx0HvWDdWs01tKVttQlIN4sRtFkIS
-beu0tsPH417NHaxpDHH1CKFBPsMVnW+hR2NneW1vPMpuppZvMGN0bOc/LxjjtmpeHu+a50Qx
-3JFQS2MPw/KYND1x5DtCXEhbcemI1zmuatn1i102wiiM0rpbQ3lmsYIyFwskLAYBBVsjPr7V
-2cXhOBNGk0+a8u51mn8+4kdlDTcglWwANpAwQMUyTwRZyyM/9p6uu4k7UvnCqPQDsPam6UtL
-GSxEOaTfV9hmhTSajr2s3gZ/soZLWIbjglAd5H/Amxn2rP060ZPEmq6Mmt38qmzjkDS3AkeJ
-y7ZK5GBxjtWnpHg2z0SXfb3molQrL5Ul0zJ83U7TxnPOaavgjS1svs4WYTbzIbtZSs5c9WMg
-5yenpjtV8rsroh1afNJpu2iWnbqZ0Auf+Er0aHUZLaW6ijuVZoTwy/Lhiv8ACSOorJ8c20Gq
-eKbKGzsLSWeOdY7iWeHKu5UlImPcYyfbit+L4eaZBeC9jvdVFxwGf7Y25gOxOMke1beqaONS
-ksnExi+y3AnGFzuwpGP1qXTcoWfc0jiIwnGcXeya1Vt7+fmeUajJYRalbxypo6PLKY5430pn
-NvhehYHD4wFyPrXoNsl5N4TsRpp0u5jP/PS3eKHYM42pyRgjvUU/ge4ubiCeXxJqTywOXhYx
-w/IxBBI+T0JHNXptA1GXSVsD4gvuZCZbgpGJWQ/wggAL9cZqadOUea6CtXhUUUntvf8A4Y4K
-5nvrfxA90bHSnitkW1nlRW8qJpGyN3HUYGfQMM13mnfbNO065l1JNLtrVV3g2m5QPUtkAelX
-7XQtPtNHOlx2yGzKlXRxu356liepPc1Fo+hvpEctv9tmubLpBDOAxhXuu7qw9M9KqFJx63uR
-UxEZpaWt+K/zPKfC4vk1WySzlmSRrKQebPaqscS7wSeqlx0GeSCa6TwPPrM9/LC17aRwmU3a
-xm2O6eJ2OWVt3HI9DjIrqdW8KWms30VxLPcRhYWhaOFwodGYMQTjODtxx2qzc6DZyXVjNEHt
-pLTiIwHb8neMjoVOBx7VEKEou/Y0q4uM4tW1a7LSxwPjKGwn8R3MMcbNqCtbOg+2SoZC7lSo
-G7C8Y5AyM1Xu7LTba51S21e3vVnEUP2G3juJnz+75VWGQ3zjGWzXfv4T0i4Fz9rhNy9xP57y
-Sn51YcLtIwVwBgYqsfAlmXJGqa1z3+3vV+ylduyJWIg4Rjdqy/y/An1JNUudJhkS6tLIeTuu
-UuYfNUfLyM7hwOc5rzEQakbl4muYY7A2katKIHyLYOwViu7O0nrz90ivWB4btJba2guZbi5g
-hXAjmmLrIc5DPn75+vHtTxosY16TUy2VktRbGIrxgMWz+uMUTouUrhRxapJpK9/Ih0iSaw0h
-7vU9SspLSOPessMXlRpGB1+8RjAp2ieJtI8QW0k+lXiXSRNtk2ggqcZGQQDyOnHNVLjwfpku
-ianpMAkhtdQQq6RudseR1RTwvPOOhpPDfhy50e7vb/U9UbUL+7EcbSiEQqqRghQFHfkkn39K
-2htZnLUacm1/kdXRRRTICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKAKN9M0UtkqhT5lwEO4ZwNrHj34q9VK9meGWyVNuJbgI2Rnjax4/Kr2MCm9hLc
-SiiikMzdX6WP/X5F/M1pDoPpRRVMSCiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
-BRmiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKAM/Up3t3tQmMNMFORnjBrQooqnsJBRRRUjP/2Q">
+bQKYo1bJH3iD0B7UXglZt/iC9q2ppK79Nb6CW+h6tc+ILXUNYvLaX7GGMMVtEUUswwWYkk8D
+oPese48P63IsSf2fG0t1qAvZ5RMmIFVhhPVvlUcjua6LW/FsGiR27S2NzMJoWn/chSURQCSc
+kdMisq+8bq2pW0NlBeyW8czC8lSykkAAB+VcDk5I5HSlL2e1zan9Y0koq1vlp6GXpfhfWozp
+929lGjWKgPbyTLm6IZmBBUlV27srnqeuBzXX6pb6zdmOOySziiKgvJcAu8Z9Ag4PHv8AnVvS
+NdtdXs5bq383y4nZHEsLRsGHUbW5rnLvx0jQQzaXp99cKZAXU2EwDxnqVbGM9+evSqtCEbX0
+MnKrUndpXX4X9R974UuYtLOm2C28qXbFry8uG2y5JG5lULjoMAZAHFa3iXTrm/8AC1xZW0Kv
+O6qqIxABww657YFS6Z4kttUujbQ29/HJtLZnspYl4/2mGPwqoPE0NnLcx63H9iaGQKkpy0cq
+tnaVbHXjkdiPpQ1Ts10ZHNVclpdp38zkrjwbrAXUYks7EidrQoIYlSI7JSW3ITzgEE+vaul8
+K6Df6VLqy3cNtGlw0ZjNugSMgJg4XORz61DL4+0v+3rK2gvIGtJVk819rZDDG0dO5JqxrniP
+UNM1S3tYLGB47hljjmkuQoDEE/MuM4461EVTXvJ+R01J15pQaSur9tv+GMG08AXFs+lslrZJ
+JDKJbq5E7liQzHCrjBBBHpU2h+F9d0WNLe1t9LgJmHnXyys0zx78n5SuORxjOKsf8Jhq32i5
+jg0iK4W1k8p5ftaRAsFBJCsM45rprTXrefw/b6vOY7WKaJX/AHrjCk9ATVQjT3iZVZVUrTs7
+/PUxPE3httQuGvLCxsZdQkAQ3FwzKYwAwBGAckbjxxmqml/D6O3uITepbi0tj+6ggDZl6fNM
+7csMgHZ0GB1xUx+IlimjSTNLafbo5PJ8lbgFGcnghv7hHOewrpE1SK/0uW402e3uHUYBWTcm
+7HQkUJQu5LUTnWjFQei2Mrxlaahf6DLYafYfanuP3ZbzlTyhn7x3dRx0FV5bDW7DX7m+0yCz
+uIrmGJGE87RlCm7phTkHNYFj8QNQvAvmnToUktXnMgleTyiCFCuoHUsR+Ga2fD/jW21nVo7U
+PDEGiUBclmeY53Kp6EKB19/rSUqUpXT1ZTjWpwcWk4q99+tv8hZtL8SXVhq5uDbLc3yJBDBF
+OzRwpgqz5YDLfMTjHYc1z83w+vrtbq3FnBEHlZYp5pmYpGoQJhFOCDhuuCK6TxD4uXRtUtLF
+ILli0yrMVtZHUoVJwhAwW4HAz3puqeKdW05ZrwaIX0+NQ/nNcqjlTjnyyMg89DzRKNJ79C6N
+SvTs4WV9V020RR8KeF9R0LxNLNJEgtPJbEyyHDsxB2hSScLg4J7V1mu3F7Bp7GwsWvZW+Uxr
+KsZAPfLcVHruu/2DpovJLK5uYwfn8nb8g9TkjiuZj8cakdbkt20G8MKwLKIwsfmDLEbid+Nv
+H1qvcguVMhqtiJ+1kk7d3vY6jwvYz6d4Z0+yukVZ4oQsiq24A+me9ZmsadLe+KtOPkyG2+yX
+McsijhC20AE+p5x9K1tE1X+2NMS8FrPbK3KJOF3MvZhtJGD2rW71pyqUbdDn9pKM5Se+v4nB
+T+DZ7G0tpIb3UtSFg8clvZSSQopKcAbto6DPU1v+ErC507QYoL2LypzJLI8YcNs3yM2Mjg9e
+1dBRmiMFF3QSqznG0gIGegoGB0FFFUZHnviPSNd1PV1ENnYS6fG4cpLOyNMQMqHwhwAe2eeK
+047LW4tRguvKtJIcqstsn8P+0jEcEdx39q67tikBxUKmk73N/rE3FRsrJWMTxHo9xrNlDDa3
+SW00U8cwkaPeBtOemRXN2vhnxBbXF4YtbSOOeXeN1ssjP8gBZjwAcjoK9BpKUqUZO7CnialO
+PLG1vNJ/mYOiaU+n+FrHS7xYpXigWOUD5kb16jkfhUGt6VNc3GkfZoVKW94kjgMAEQAjIB/k
+K6aiq5VaxmqslLm66/iZ/wBjiEhlEaCYqEMm0bioOcZ649q46DwbqwvImk1OBbaPUftgtxFn
+jeW+/wAHJ9MYr0DijPtRKEZNN9BxrTiml18jj7vRNVvtdtJboWIsraYT+ZHkSvtzsQgjGATn
+OfwrsMfjS0ZoUVHYmU3NK/QTA9BWZqtve3Fi8djcpbTtgCVo9+0d8D19K1KKbV1ZiTad0cTJ
+4Q8iTSvs0hkFvem6upZ3JeYmNlJJxyckccAAVpWeg/2fqbXVrcFbV4yGtXXcFbPVGPKj1Xp9
+K6Sl7UuSPQ0dabVmzjNS0S+8S3zWuowxQaTFIG2g7pbkjBHP8C+vc9OKr+K9DuJYSulaWZ5r
+mEWrSC4WNYUDBh8p6/hzxXdUbs0nTi1YFWmmmtl06HF6voOqXut2V9Z38dqsNs8TuYxISWKk
+AKeP4euabFoWtaZ4btNOsWsLuSFWDfaQyKWLFlYYBxjPTH4iu1J4pM5odOOvmP6xOyWll5f1
+3MvQ9MGj6HZadu3mCIKzf3m6k/ic1xh+H1y/2eG51EzWqXcsxWMmAxq28jaRkk5YZyegr0jt
+SdqJU4y3QUq86bcoOzZxPhbwvc6Hrd7dyBFt5o0jiX7S8zkKzHcSwGOCOBmu4oBopwgoLlRN
+WrOrLnnuUr6byZbMbEbfcBfmGcfKxyPfirvaqV9OYZbJQqHzLgJ8wzj5WPHvxV4jFW9jJCUU
+UUhlDUYRN9kzJGmy5R/n747D3q/VDUYVmNpulSPZco43H7xHYe9X+gpvYSCo5mjjidpWVYwP
+mLHAAqSoJoY7iF4po1eN1KsrDIYHqCKTKW+p5dr8sVxY3UWizySWQngVGeMtDFN5y4COTyPV
+RkDHUdK6Tw3bifUrm6v55JNSjzC1s4CC2XPRVHUNjO/uMVd1rw/Pqn2W2hvEtbGKSN3t0gBL
+bHDDa2flHAHStV9NtJbuC7aAG4iJ2SgkMM9RkdR7HisoU2pXOqpiU6agvP16bs828b2lnqGt
+wrpwZrj7XBFdzmeQojMcKm0MBnuQMED0zVcGOy0bxVbTR/ZZTpkSiGSUuSwEmdpYksD1H1r0
+bUtCt74W6xbbcQ3kd22xB87K2Tn6+tUNR8E6Vqk2oTXUYea8hSEOUUmHaCNyEjg8/oKmVJ3b
+W7v+QoV48ihK9lb80zmfGrv5VkVguZhJp08QMMLSYLKmCcdB71g3VrNNbSlbbUJSDeLEbRZC
+Em3rtLbDx+NezR2saQxx9QihQT7DFZ1voUdjZ3ltbzzKbqaWbzBjdGznPy8Y47ZqXh7vmudE
+MdyRUEtjD8PymDQ9ceQ7QlxIW3HpiNc5rmrZ9YtdNsIojNK6W0N5ZrGCMhcLJCwGAQVbIz6+
+1dnF4TgTRpNPmvLudZp/PuJHZQ03IJVsADaQMEDFMk8EWcsjP/aerruJO1L5wqj0A7D2pulL
+SxksRDmk31fYZoU0mo69rN4Gf7KGS1iG44JQHeR/wJsZ9qz9OtGTxJqujJrd/Kps45A0twJH
+icu2SuRgcY7Vp6R4Ns9El3295qJUKy+VJdMyfN1O08Zzzmmr4I0tbL7OFmE28yG7WUrOXPVj
+IOcnp6Y7VfK7K6IdWnzSabtolp26mdALn/hK9Gh1GS2luoo7lWaE8Mvy4Yr/AAkjqKyfHNtB
+qnimyhs7C0lnjnWO4lnhyruVJSJj3GMn24rfi+HmmQXgvY73VRccBn+2NuYDsTjJHtW3qmjj
+UpLJxMYvstwJxhc7sKRj9al03KFn3NI4iMJxnF3smtVbe/n5nlGoyWEWpW8cqaOjyymOeN9K
+Zzb4XoWBw+MBcj616DbJeTeE7EaadLuYz/z0t3ih2DONqckYI71FP4HuLm4gnl8Sak8sDl4W
+McPyMQQSPk9CRzV6bQNRl0lbA+IL7mQmW4KRiVkP8IIAC/XGamnTlHmugrV4VFFJ7b3/AOGO
+CuZ7638QPdGx0p4rZFtZ5UVvKiaRsjdx1GBn0DDNd5p32zTtOuZdSTS7a1Vd4NpuUD1LZAHp
+V+10LT7TRzpcdshsypV0cbt+epYnqT3NRaPob6RHLb/bZrmy6QQzgMYV7ru6sPTPSqhScet7
+kVMRGaWlrfiv8zynwuL5NVsks5ZkkaykHmz2qrHEu8EnqpcdBnkgmuk8Dz6zPfywte2kcJlN
+2sZtjunidjllbdxyPQ4yK6nVvClprN9FcSz3EYWFoWjhcKHRmDEE4zg7ccdqs3Og2cl1YzRB
+7aS04iMB2/J3jI6FTgce1RChKLv2NKuLjOLVtWuy0scD4yhsJ/EdzDHGzagrWzoPtkqGQu5U
+qBuwvGOQMjNV7uy022udUttXt71ZxFD9ht47iZ8/u+VVhkN84xls137+E9IuBc/a4TcvcT+e
+8kp+dWHC7SMFcAYGKrHwJZlyRqmtc9/t71fspXbsiViIOEY3asv8vwJ9STVLnSYZEurSyHk7
+rlLmHzVHy8jO4cDnOa8xEGpG5eJrmGOwNpGrSiB8i2DsFYruztJ68/dIr1geG7SW2toLmW4u
+YIVwI5pi6yHOQz5++frx7U8aLGNek1MtlZLUWxiK8YDFs/rjFE6LlK4UcWqSaSvfyIdIkmsN
+Ie71PUrKS0jj3rLDF5UaRgdfvEYwKdonibSPEFtJPpV4l0kTbZNoIKnGRkEA8jpxzVS48H6Z
+Lomp6TAJIbXUEKukbnbHkdUU8LzzjoaTw34cudHu72/1PVG1C/uxHG0ohEKqkYIUBR35JJ9/
+StobWZy1GnJtf5HV0UUUyAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigCjfTNFLZKoU+ZcBDuGcDax49+KvVSvZnhlslTbiW4CNkZ42sePyq9jApvYS
+3EooopDM3V+lj/1+RfzNaQ6D6UUVTEgoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUZoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigDP1Kd7d7UJjDTBTkZ4wa0KKKp7CQUUUVIz/9k">
 </DD>
 </DL>
 
