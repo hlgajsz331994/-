@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:9-->
+<!--LastNote:15-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -75,7 +75,6 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <DT>Html</DT>
 <!--property:date_created=1476667671-->
 <!--property:date_modified=1476935075-->
-<!--property:expanded-->
 <DD>
 超文本标记语言           大小写不敏感<DL>
 <DT>&lt;head&gt;</DT>
@@ -115,7 +114,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 </DD>
 <DT>Html 表单</DT>
 <!--property:date_created=1476942726-->
-<!--property:date_modified=1477016758-->
+<!--property:date_modified=1477278710-->
 <DD>
 HTML 表单用于搜集不同类型的用户输入。<BR>
 <BR>
@@ -145,8 +144,10 @@ HTML 表单用于搜集不同类型的用户输入。<BR>
 											4）maxlength：规定输入字段允许的最大长度<BR>
 						<span style="color:#ff0000">												</span><span style="color:#000000"><BR>
 				2）&lt;select&gt;元素  ：下拉列表<BR>
-								①子元素：&lt;option value=&quot;a&quot;&gt; a【显示的值】 &lt;/option&gt;<BR>
+								①子元素：&lt;option value=&quot;a&quot;&gt; a【显示的值】 &lt;/option&gt;   <BR>
 												selected 属性： 可以添加selected 来定义预定义选项【没有值，只加入】<BR>
+													【</span><span style="color:#ff0000">多个option有selected 属性，只识别靠后的一个</span><span style="color:#000000">】<BR>
+										【</span><span style="color:#ff0000">JS中输出 option标签里 空的文本值   会出错</span><span style="color:#000000">】			<BR>
 												value 属性：<BR>
 										<BR>
 				3）&lt;textarea&gt;元素： 定义多行输入字段（文本域）<BR>
@@ -206,7 +207,7 @@ CSS是由选择器加声明组成的。<BR>
 <DL>
 <DT>语法基础</DT>
 <!--property:date_created=1476687138-->
-<!--property:date_modified=1477040208-->
+<!--property:date_modified=1477275245-->
 <DD>
 1.var：定义变量   区分大小写      var  age = 13；    未赋值的默认值为  undefined<BR>
 <BR>
@@ -235,7 +236,8 @@ CSS是由选择器加声明组成的。<BR>
 12.方法带方法名，直接执行    例：onclick = hello；         onlick = hello（）；<BR>
 								onclick =alert();  已经执行 <BR>
 <BR>
-13.方法也是一个对象    ？                               onclick = { alert（i）;}     点击时调用，i已经是结果值     <BR>
+13.方法也是一个对象    ？                               onclick = function（）{ alert（i）;}     点击时调用，i已经是结果值     <BR>
+											this 当前响应的节点<BR>
 <BR>
 <BR>
 <BR>
@@ -348,17 +350,31 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>添加节点</DT>
 <!--property:date_created=1476933717-->
-<!--property:date_modified=1476934236-->
+<!--property:date_modified=1477298652-->
 <DD>
 1.	1）创建元素节点：document.createElement（&quot;li&quot;）  参数，被创建元素的名字   返回元素节点<BR>
 	2）创建文本节点： createTextNode（“”）   参数，所包含的文本字符串。    返回文本节点<BR>
 	<BR>
 2.添加节点到父节点中：appendChild（）方法	            父节点.appendChile(子节点)<BR>
 <BR>
-3.
+3.流程  ：   创建文本节点，创建元素节点       元素节点中加入文本节点              父节点中加入元素节点
 </DD>
 </DL>
 
+</DD>
+<DT>定义正则表达式</DT>
+<!--property:date_created=1477296402-->
+<!--property:date_modified=1477297647-->
+<DD>
+1.定义正则表达式   ：①普通方式： var reg = /表达式/附加参数              <BR>
+		表达式：一个字符串，代表某种规则<BR>
+		附加参数：用来扩展表达式的含义-  g：代表可以进行全局匹配<BR>
+									    i ： 代表不区分大小写匹配<BR>
+									    m： 代表可以进行多行匹配<BR>
+									<BR>
+		②	<BR>
+								<BR>
+2.表达式操作：   1）表达式对象方法  ①：exec（str）返回与str与表达式相匹配的第一个字符串		
 </DD>
 </DL>
 
@@ -1461,9 +1477,9 @@ upJLiWFTK26ZpI8Ajl3GFwD0B61nSxEpOzOqtgacIOUXdr8Njt7bxDaXGpXVirkSWziPcxAV
 PHPPOa6Lw8LiztdLtLU6fbx3NypN3bzHzrlQ5JBTZnnGDngDrVU60ptHNWw0Kaeuv3HocuuW
 lvq50yWTZN5Hn7mIC7d23GSeuarXPirR7LUo7O6vYonkhMqszALtBx1z37fQ15/rCyN40vI9
 Vs7C5DmNI/MUu8cZVyu3PfIJP1FYWntYwxWS3NrfSWUloj6gRiV3QAFflzmOPqM8EjP1p+2l
-exrHBRcFNtvS+lux7LqusW+laJLqbbpoEQOPLIywPTHbvVO98Y6Dp8rQ3d/HFKqqzIVYkBum
+expHBRcFNtvS+lux7LqusW+laJLqbbpoEQOPLIywPTHbvVO98Y6Dp8rQ3d/HFKqqzIVYkBum
 cDvXOePbrTbjwnDL9purZpIRJb28bNHvU4++g7AY69DXOzG5WW9tItP1WeR0s5AGQzSKqOzf
-Ow6EjoPwpTrSU3FeRFHCU501OV931S7d/U9RtPEGmalaTXdpdpJBASsrgEbCBkg5HpVAeOvD
+Ow6EjoPwpTrSU3FeRNHCU501OV931S7d/U9RtPEGmalaTXdpdpJBASsrgEbCBkg5HpVAeOvD
 rqCL4spGQRC5BH/fNZOj+efDfiGea1uLYXE80yJPEY32mIYOD9K8wunubONRHDD5KW8LjzBN
 ltyKTghsHBPqKVavOmk1Y6MFgaOInKMm9NrNfnY9v07xRo+qXgtLS9Ek5UuEKMpIHU8geopt
 /wCKdG0y4a1vbwRzqAxUxseDyOQMVxXw1tbdtZvZ2tn86ONfLlMkjKoY8qu4D0B7/Wup1C68
@@ -1476,8 +1492,8 @@ PTPlP/8AE1p6dqVrq1kl3ZTLNbuSAV6Eg4PX3rzq11We5uLNW1jxBHHcyIkMsunRJG5bkfNs
 scUalpHPYCo9Ov7bVLCG9tH8y3nQOjYxkGvO9d1yTVrow3F5p2nW1vL81jey/vJsdC4U/Kuc
 Hb378VDpOsTaPqDtaX2l3tvPKD/Z1nMQ4Y9WiDHGT1Kd+o5qParm8jRUH7O/X8PvPQ7nULGy
 uYILieOKSXIiVuNxHYf4Vhz+PNDgmWOOWe4mdigjgtpHfIz2xml168v7e6sJPs9o1nLcQxss
-6EyK7NjcOwI4xXG61cNFrNtA/iTUJpbW4PmsLRW8j5D8w2pgnkDv1qZzlHb+vxNKNGM/i7d/
-+Aeo2F619p8dy9tNbM4z5U6gOv1FVtR1WDT5rNJFZjczCFSuOCQTk57cVis7HwFdXA1SbUFm
+6EyK7NjcOwI4xXGa1cNFrNtA/iTUJpbW4PmsLRW8j5D8w2pgnkDv1qZzlHb+vxNKNGM/i7d/
++AepWF619p8dy9tNbM4z5U6gOv1FVtR1WDT5rNJFZjczCFSuOCQTk57cVis7HwFdXA1SbUFm
 tmliuZEVDtK8cKBj+dcRcf8ACIm20YpHc7zNH9pJ+0crtOcZ9/7vNFSq46ehnSoxk3e9rtaL
 y8z1eXTrS7kaV8lj1wazUi0p9Sk04M/2iOITMADgKSQMnpnjpXP+FBpDeLL1NG85LX7DEWSQ
 y/f8xskCTnpiuUlEX9qrNaWV0uovquxbpxIIWHmEKhbOOOOMU3XkkmjSnQi5Si21ZLdJb99T
@@ -1492,7 +1508,7 @@ vVRkDKr1Oe/1rImvLrUNPubq8ZTPNooclU2AgzHbxk44xT9rLX+v1GsNTcYuzTdr69/l+p6Z
 qGo2ljbJcXDHYzoi7VLEsxAGAPrTp9Vtre+trJixmuAxQKpIAUZJJ7Dp+dcX4tSzm8Q6dHfW
 F3cwC1kdYbYOzBgUw2FIPHPPvWBomnwXFlpt7rsElxZ3CG1tHW4dfJO9iN+CDlzxnJAwB3pO
 tJSasUsLT5FKUn6adb2tr0tqetzziC2knbeURSx2KWJA9AOSaw5/GOjW9nDdNdbo5kMke1GO
-4DqOBwc8YPeqvhyG6k8FIljOIHMkvlSSKZNq+Y2MgnJ4461wWq3dzc6Pa3F7LbuslzPCsUNu
+4DqOBwc8YPeqvhyG6k8FIljOIHMkvlSSKZNq+Y2MgnJ4461wWq3dzc6Ta3F7LbuslzPCsUNu
 IwHVnBfJkA5x371NatKMbx7DwmFhUquE3onbTc9M0TxXpmvCNbWZhK8fmGN0YEDvk4x+Rroe
 e/SvJ/h0rHVXhtpBGkESearqrmVSSBhlkIBBGelesnOa1oTc4KTMsbQhRqyhT28yneyrHLZb
 okcvcbQW/gO1uR78Y/Gr3aqV7KI5LMGNHLz7QWH3flY5Hvx+tXa2ONBRRRSGUNRgM4tdrouy
@@ -1525,8 +1541,8 @@ KsZAPfLcVHruu/2DpovJLK5uYwfn8nb8g9TkjiuZj8cakdbkt20G8MKwLKIwsfmDLEbid+Nv
 H1qvcguVMhqtiJ+1kk7d3vY6jwvYz6d4Z0+yukVZ4oQsiq24A+me9ZmsadLe+KtOPkyG2+yX
 McsijhC20AE+p5x9K1tE1X+2NMS8FrPbK3KJOF3MvZhtJGD2rW71pyqUbdDn9pKM5Se+v4nB
 T+DZ7G0tpIb3UtSFg8clvZSSQopKcAbto6DPU1v+ErC507QYoL2LypzJLI8YcNs3yM2Mjg9e
-1dBRmiMFF3QSqznG0gIGegoGB0FFFUZHnviPSNd1PV1ENnYS6fG4cpLOyNMQMqHwhwAe2eeK
-047LW4tRguvKtJIcqstsn8P+0jEcEdx39q67tikBxUKmk73N/rE3FRsrJWMTxHo9xrNlDDa3
+1dBRmiMFF3QSqznG0gIGegoGB0FFFUZHnniPSNd1PV1ENnYS6fG4cpLOyNMQMqHwhwAe2eeK
+1I7LW4tRguvKtJIcqstsn8P+0jEcEdx39q67tikBxUKmk73N/rE3FRsrJWMTxHo9xrNlDDa3
 SW00U8cwkaPeBtOemRXN2vhnxBbXF4YtbSOOeXeN1ssjP8gBZjwAcjoK9BpKUqUZO7CnialO
 PLG1vNJ/mYOiaU+n+FrHS7xYpXigWOUD5kb16jkfhUGt6VNc3GkfZoVKW94kjgMAEQAjIB/k
 K6aiq5VaxmqslLm66/iZ/wBjiEhlEaCYqEMm0bioOcZ649q46DwbqwvImk1OBbaPUftgtxFn
@@ -1545,33 +1561,33 @@ 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
-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
+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">
 </DD>
 </DL>
 
@@ -1650,6 +1666,50 @@ ResultSetMetaData：可用于获取关于 ResultSet 对象中列的类型和属�
 	②.getProperty()
 </DD>
 </DL>
+
+</DD>
+<DT>正则表达式</DT>
+<!--property:date_created=1477279765-->
+<!--property:date_modified=1477296221-->
+<DD>
+代码	说明<BR>
+.	匹配除换行符以外的任意字符<BR>
+\w	匹配字母或数字或下划线或汉字<BR>
+\s	匹配任意的空白符（包括空格，Tab，换行符，中文全角空格）<BR>
+\d	匹配数字<BR>
+\b	匹配单词的开始或结束                                                                  <BR>
+^ 	匹配字符串的开始    <BR>
+$	匹配字符串的结束                  (匹配开头和结尾)<BR>
+*    前面任意的数量  (可能是0次)<BR>
+\d+  匹配一个或更多连续的数字(重复一次或更多次)<BR>
+<BR>
+①\：转义字符 \.    \*    \\<BR>
+<BR>
+②|：规则一| 规则二             |匹配满足任意一个<BR>
+<BR>
+③（）： 分组    （）{3}  执行三次匹配<BR>
+<BR>
+④【】：匹配其中任意一个    【a-z0-9A-Z】 【aeiou】       <BR>
+<BR>
+ 例：((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)   匹配IP地址<BR>
+例： .\b.    ：  @@@@abc         匹配到@a<BR>
+<BR>
+表2.常用的限定符<BR>
+代码/语法	说明<BR>
+*	重复零次或更多次<BR>
++	重复一次或更多次<BR>
+?	重复零次或一次<BR>
+{n}	重复n次<BR>
+{n,}	重复n次或更多次<BR>
+{n,m}	重复n到m次<BR>
+<BR>
+表3. 反义字符<BR>
+\W	匹配任意不是字母，数字，下划线，汉字的字符<BR>
+\S	匹配任意不是空白符的字符<BR>
+\D	匹配任意非数字的字符<BR>
+\B	匹配不是单词开头或结束的位置<BR>
+[^x]	匹配除了x以外的任意字符<BR>
+[^aeiou]	匹配除了aeiou这几个字母以外的任意字符<BR>
 
 </DD>
 </DL>
