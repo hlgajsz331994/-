@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:15-->
+<!--LastNote:11-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -75,6 +75,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <DT>Html</DT>
 <!--property:date_created=1476667671-->
 <!--property:date_modified=1476935075-->
+<!--property:expanded-->
 <DD>
 超文本标记语言           大小写不敏感<DL>
 <DT>&lt;head&gt;</DT>
@@ -274,7 +275,7 @@ CSS是由选择器加声明组成的。<BR>
 </DD>
 <DT>事件</DT>
 <!--property:date_created=1476692171-->
-<!--property:date_modified=1476762422-->
+<!--property:date_modified=1477386055-->
 <DD>
 JavaScript所支持的事件：<BR>
 	1）窗口事件<BR>
@@ -283,7 +284,13 @@ JavaScript所支持的事件：<BR>
 	4）键盘事件<BR>
 	5）鼠标事件<BR>
 	<BR>
-1.	windows.onload    加载完后获取页面节点
+1.	windows.onload    加载完后获取页面节点<BR>
+<BR>
+2.标签.onclick = function（）{}<BR>
+<BR>
+3.var a = confirm（“确定要删除吗？”）  弹出确认框       返回 true 或者 false<BR>
+<BR>
+4.alert（）；   弹框
 </DD>
 <DT>对象</DT>
 <!--property:date_created=1476779191-->
@@ -350,14 +357,30 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>添加节点</DT>
 <!--property:date_created=1476933717-->
-<!--property:date_modified=1477298652-->
+<!--property:date_modified=1477379892-->
 <DD>
 1.	1）创建元素节点：document.createElement（&quot;li&quot;）  参数，被创建元素的名字   返回元素节点<BR>
 	2）创建文本节点： createTextNode（“”）   参数，所包含的文本字符串。    返回文本节点<BR>
 	<BR>
 2.添加节点到父节点中：appendChild（）方法	            父节点.appendChile(子节点)<BR>
 <BR>
-3.流程  ：   创建文本节点，创建元素节点       元素节点中加入文本节点              父节点中加入元素节点
+3.流程  ：   创建文本节点，创建元素节点       元素节点中加入文本节点              父节点中加入元素节点<BR>
+<BR>
+4.替换节点： replaceChild（） :  父元素.replaceChild（newChild，oldChild）；     返回一个被替换的子节点的指针<BR>
+								<span style="color:#ff0000">移动现节点，顶掉原节点，   原节点空出在 数据流中，不显示</span><BR>
+<BR>
+			cloneNode（true） ： 克隆节点                var bjNode2 = bjNode.cloneNode（true）<BR>
+			<BR>
+			获取父节点：子节点的parentNode 属性      var aParent = aNode.parentNode<BR>
+			<BR>
+			节点的 <span style="color:#ff0000">Index</span> 属性<BR>
+			<BR>
+5.删除节点：removeChild（节点引用）	返回指向删除掉的子节点的引用		 父节点.removeChild（子节点）   <BR>
+				被删除的节点的子节点也会全部被删除<BR>
+				<BR>
+6.				<BR>
+			<BR>
+			
 </DD>
 </DL>
 
