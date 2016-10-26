@@ -94,7 +94,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 </DD>
 <DT>&lt;body&gt;</DT>
 <!--property:date_created=1476684327-->
-<!--property:date_modified=1476942640-->
+<!--property:date_modified=1477460923-->
 <DD>
 标签的属性值  ：  使用单引号或者双引号都可以     属性总是以  名称/值对的形式出现<BR>
 				1）style 属性   用于改变Html 样式           <span style="color:#ff0000">CSS</span><BR>
@@ -103,7 +103,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <BR>
 2.&lt;h1-6&gt;：标题标签<BR>
 <BR>
-3.&lt;ul&gt;：标签定义无序列表     配合&lt;li&gt;<BR>
+3.&lt;ul&gt;：标签定义无序列表     配合&lt;li&gt;      ·一<BR>
 <BR>
 4.&lt;a&gt;：链接标签      --href  属性<BR>
 <BR>
@@ -111,11 +111,13 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <BR>
 6.&lt;br/&gt;：换行<BR>
 <BR>
+7.&amp;nbsp;  ：空格<BR>
+<BR>
 
 </DD>
 <DT>Html 表单</DT>
 <!--property:date_created=1476942726-->
-<!--property:date_modified=1477278710-->
+<!--property:date_modified=1477461942-->
 <DD>
 HTML 表单用于搜集不同类型的用户输入。<BR>
 <BR>
@@ -125,7 +127,7 @@ HTML 表单用于搜集不同类型的用户输入。<BR>
 								GET 提交的数据在地址栏可见<BR>
 			3）name： 识别表单的名称					<span style="color:#ff0000"><BR>
 			<BR>
-</span><span style="color:#000000">3.&lt;fieldset&gt;元素：表单分组<BR>
+</span><span style="color:#000000">3.&lt;fieldset&gt;元素：表单分组  【可以嵌入到form中，也可不嵌入】<BR>
 			&lt;legend&gt;：子标签     用于显示分组标题<BR>
 			<BR>
 4.表单元素：  可以不放在表单中<BR>
@@ -153,6 +155,7 @@ HTML 表单用于搜集不同类型的用户输入。<BR>
 										<BR>
 				3）&lt;textarea&gt;元素： 定义多行输入字段（文本域）<BR>
 				4）&lt;button&gt;元素：定义可点击的按钮	没有Value属性 ，文本值定义在文本节点内	<BR>
+								【与input 的按钮相比，可以在&lt;button&gt;&lt;/&gt;之间放置图像和文字】<BR>
 <BR>
 <BR>
 <BR>
@@ -193,7 +196,7 @@ CSS是由选择器加声明组成的。<BR>
 </DD>
 <DT>JS</DT>
 <!--property:date_created=1476683387-->
-<!--property:date_modified=1476686647-->
+<!--property:date_modified=1477462170-->
 <!--property:expanded-->
 <DD>
 1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
@@ -203,7 +206,7 @@ CSS是由选择器加声明组成的。<BR>
 	<BR>
 	&lt;script&gt;标签嵌入的脚本和外部引入的脚本可以放在&lt;head&gt;标签和&lt;body&gt;标签的任意位置。<BR>
 <BR>
-2.	<BR>
+2.	JS内容   按从上到下  顺序执行<BR>
 <BR>
 <DL>
 <DT>语法基础</DT>
@@ -387,7 +390,7 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>定义正则表达式</DT>
 <!--property:date_created=1477296402-->
-<!--property:date_modified=1477297647-->
+<!--property:date_modified=1477449229-->
 <DD>
 1.定义正则表达式   ：①普通方式： var reg = /表达式/附加参数              <BR>
 		表达式：一个字符串，代表某种规则<BR>
@@ -397,7 +400,39 @@ JavaScript所支持的事件：<BR>
 									<BR>
 		②	<BR>
 								<BR>
-2.表达式操作：   1）表达式对象方法  ①：exec（str）返回与str与表达式相匹配的第一个字符串		
+2.表达式操作：   1）表达式对象方法  ①：exec（str）返回与str与表达式相匹配的第一个字符串	<BR>
+				<BR>
+				<BR>
+				2）对象方法 ①：replace（表达式，“替换内容”）    匹配上的部分，替换			  	<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+							<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+								
 </DD>
 </DL>
 
