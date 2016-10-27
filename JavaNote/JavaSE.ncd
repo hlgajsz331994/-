@@ -1,0 +1,28 @@
+<!DOCTYPE NoteCase-File>
+<!--LastNote:1-->
+<HTML>
+<HEAD>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+<meta name="generator" content="NoteCase 1.9.8">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<DL>
+<DT>JavaSE</DT>
+<!--property:date_created=1477533830-->
+<!--property:date_modified=1477533830-->
+<!--property:expanded-->
+<DD>
+<DL>
+<DT>常量结论</DT>
+<!--property:date_created=1477533837-->
+<!--property:date_modified=1477533874-->
+<DD>
+1.    String a = &quot;abc&quot;;                   String b = &quot;&quot;
+</DD>
+</DL>
+
+</DD>
+</DL>
+</BODY>
+</HTML>

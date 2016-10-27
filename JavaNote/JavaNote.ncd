@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:11-->
+<!--LastNote:18-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -94,7 +94,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 </DD>
 <DT>&lt;body&gt;</DT>
 <!--property:date_created=1476684327-->
-<!--property:date_modified=1477460923-->
+<!--property:date_modified=1477550939-->
 <DD>
 标签的属性值  ：  使用单引号或者双引号都可以     属性总是以  名称/值对的形式出现<BR>
 				1）style 属性   用于改变Html 样式           <span style="color:#ff0000">CSS</span><BR>
@@ -105,7 +105,11 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <BR>
 3.&lt;ul&gt;：标签定义无序列表     配合&lt;li&gt;      ·一<BR>
 <BR>
-4.&lt;a&gt;：链接标签      --href  属性<BR>
+4.&lt;a&gt;：链接标签      --href  属性         空的href  转向当前页面<BR>
+			a href=&quot;#&quot; onclick=&quot;js_method();return false;&quot;         ：  #  返回页面顶端          false  不发生跳转    <BR>
+			a href=&quot;javascript:void(0);&quot; onclick=&quot;js_method()&quot;  ：  void（0） 返回undefined  ，地址不发生跳转 ，<BR>
+					onclick 方法负责执行JS函数， 这种方法 不会把JS方法暴露在浏览器的状态栏 。<BR>
+			a href=&quot;javascript:;&quot; onclick=&quot;js_method()&quot;		<BR>
 <BR>
 5.&lt;hr/&gt;   ：水平线<BR>
 <BR>
@@ -197,7 +201,6 @@ CSS是由选择器加声明组成的。<BR>
 <DT>JS</DT>
 <!--property:date_created=1476683387-->
 <!--property:date_modified=1477462170-->
-<!--property:expanded-->
 <DD>
 1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
 	1）通过&lt;script&gt;标签嵌入<BR>
@@ -311,20 +314,22 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>JsDOM</DT>
 <!--property:date_created=1476752880-->
-<!--property:date_modified=1476777924-->
+<!--property:date_modified=1477552128-->
 <!--property:expanded-->
 <DD>
+把所有页面的元素看做节点， 通过DOM来访问<BR>
+<BR>
 页面按顺序执行<BR>
 1.	windows.onload = function(){}   加载完成后执行<DL>
 <DT>获取节点</DT>
 <!--property:date_created=1476777934-->
-<!--property:date_modified=1476932864-->
+<!--property:date_modified=1477548346-->
 <DD>
 1.获取元素节点：<BR>
 		1）document.getElementById（）   返回对拥有指定 id 的第一个对象的引用<BR>
 				该方法为document 方法		var cityNode = document.getElementById(&quot;city&quot;);<BR>
 		2）document.getElementByTagName（） 返回带有指定标签名的对象集合    <BR>
-				Node接口的方法，<span style="color:#ff0000">任何一个节点都有这个方法</span><BR>
+				Node接口的方法，<span style="color:#ff0000">任何一个节点都有这个方法   ,可以获得子节点下所有的标签集合</span><BR>
 		3）document.getElementByName（）  返回带有指定名称的对象集合<BR>
 		<BR>
 			①若HTML元素本身没有定义 name属性， 则getElementByName方法 <BR>
@@ -439,7 +444,25 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>JQuery</DT>
 <!--property:date_created=1477018362-->
-<!--property:date_modified=1477018362-->
+<!--property:date_modified=1477553571-->
+<!--property:expanded-->
+<DD>
+write less  do  more<BR>
+<BR>
+JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
+<BR>
+使用前 导入 JQuery 的js 库<BR>
+<BR>
+.min  是不带注释的， 生产使用<DL>
+<DT>对象</DT>
+<!--property:date_created=1477551838-->
+<!--property:date_modified=1477553736-->
+<DD>
+1.$（function（）{}）  ：  相当于windows.onload = function（）{}
+</DD>
+</DL>
+
+</DD>
 <DT>Ajax</DT>
 <!--property:date_created=1476664888-->
 <!--property:date_modified=1476665319-->
