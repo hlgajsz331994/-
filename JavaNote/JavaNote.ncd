@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:9-->
+<!--LastNote:21-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -94,7 +94,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 </DD>
 <DT>&lt;body&gt;</DT>
 <!--property:date_created=1476684327-->
-<!--property:date_modified=1477966898-->
+<!--property:date_modified=1478058393-->
 <DD>
 标签的属性值  ：  使用单引号或者双引号都可以     属性总是以  名称/值对的形式出现<BR>
 				1）style 属性   用于改变Html 样式           <span style="color:#ff0000">CSS</span><BR>
@@ -117,9 +117,9 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 <BR>
 7.&amp;nbsp;  ：空格<BR>
 <BR>
-8.&lt;table &gt;   &lt;thead&gt;  &lt;tbody&gt;  &lt;tfoot&gt;<BR>
+8.&lt;table &gt; :  &lt;thead&gt;  &lt;tbody&gt;  &lt;tfoot&gt;<BR>
 <BR>
-9.value :html  节点的属性<BR>
+9.value :   html  节点的属性<BR>
 <BR>
 10.&lt;label&gt;    ：点击label区，选中设定的节点<BR>
 <BR>
@@ -127,7 +127,7 @@ Web 浏览器   ---  Web服务器		1.静态页面<BR>
 </DD>
 <DT>Html 表单</DT>
 <!--property:date_created=1476942726-->
-<!--property:date_modified=1477882876-->
+<!--property:date_modified=1478070773-->
 <DD>
 HTML 表单用于搜集不同类型的用户输入。<BR>
 <BR>
@@ -151,7 +151,7 @@ HTML 表单用于搜集不同类型的用户输入。<BR>
 						⑤checkbox： 复选框    相同的name    不同的value<BR>
 						⑥ button ：定义可点击的按钮	有Value属性值。<BR>
 								 ----&lt;input&gt;标签属性：<BR>
-											1）value ： 规定输入字段的初始值<BR>
+											1）value ： 规定输入字段的初始值    <span style="color:#ff0000">[text是标签之间的值， input没有这个属性]</span><BR>
 											2）readonly：规定输入字段为只读<BR>
 											3）disabled：规定输入字段是禁用的 （不可用、不可点击、不会被提交）<BR>
 											4）maxlength：规定输入字段允许的最大长度<BR>
@@ -207,7 +207,7 @@ CSS是由选择器加声明组成的。<BR>
 </DD>
 <DT>JS</DT>
 <!--property:date_created=1476683387-->
-<!--property:date_modified=1477984339-->
+<!--property:date_modified=1478058426-->
 <!--property:expanded-->
 <DD>
 1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
@@ -220,6 +220,8 @@ CSS是由选择器加声明组成的。<BR>
 2.	JS内容   按从上到下  顺序执行<BR>
 <BR>
 3.    JS里没有checked（）方法，只有属性<BR>
+<BR>
+4.标签放置位置错误：会获取不到节点<BR>
 <BR>
 <DL>
 <DT>语法基础</DT>
@@ -331,7 +333,6 @@ JavaScript所支持的事件：<BR>
 <DT>JsDOM</DT>
 <!--property:date_created=1476752880-->
 <!--property:date_modified=1477964614-->
-<!--property:expanded-->
 <DD>
 把所有页面的元素看做节点， 通过DOM来访问<BR>
 <BR>
@@ -440,7 +441,7 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>定义正则表达式</DT>
 <!--property:date_created=1477296402-->
-<!--property:date_modified=1477877182-->
+<!--property:date_modified=1478068560-->
 <DD>
 1.定义正则表达式   ：①普通方式： var reg = /表达式/附加参数              <BR>
 		表达式：一个字符串，代表某种规则<BR>
@@ -451,6 +452,7 @@ JavaScript所支持的事件：<BR>
 		②	<BR>
 								<BR>
 2.表达式操作：   1）表达式对象方法  ①：exec（str）返回str与表达式相匹配的第一个字符串	<BR>
+								②：test（str） 用于检测str 是否与 表达式匹配，true or false<BR>
 				<BR>
 				<BR>
 				2）对象方法 ①：replace（表达式，“替换内容”）    匹配上的部分，替换			  	<BR>
@@ -489,7 +491,7 @@ JavaScript所支持的事件：<BR>
 </DD>
 <DT>JQuery</DT>
 <!--property:date_created=1477018362-->
-<!--property:date_modified=1477964990-->
+<!--property:date_modified=1478058209-->
 <!--property:expanded-->
 <DD>
 write less  do  more<BR>
@@ -498,25 +500,14 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 <BR>
 使用前 导入 JQuery 的js 库<BR>
 <BR>
-.min  是不带注释的， 生产使用<BR>
-<BR>
-<BR>
-1.JQuery 和 Dom 对象转换：<BR>
-			1）var $btn = $(&quot;button&quot;) ;<BR>
-				var btn = $btn[0] ;<BR>
-			2） var btn = document.getElementById(&quot;btn&quot;);<BR>
-					$(btn)	<BR>
-					<BR>
-2.$(document.ready(function(){}))	<BR>
-<BR>
-3.JQuery 很多方法支持连缀 ，一个方法的返回值为方法执行完后的该对象本身，可以继续调用方法。				<BR>
+.min  是不带注释的， 生产使用		<BR>
 <BR>
 4.JQuery 的隐式迭代： $(&quot;p&quot;).click(function(){})      p是个节点集合     <BR>
 <BR>
 5.响应函数中 this 是一个DOM 对象 <DL>
-<DT>用法</DT>
+<DT>选择器</DT>
 <!--property:date_created=1477618844-->
-<!--property:date_modified=1477894673-->
+<!--property:date_modified=1478070190-->
 <DD>
 1.JQuery 元素选择器： $（“”）     参数放在“”中，   逗号可以用来并列选择     “span,#one”<BR>
 			1）#id  ： 根据给定的id匹配一个元素    ，单个元素组成的集合<BR>
@@ -525,7 +516,7 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 			4）*   ： 匹配所有元素<BR>
 			5）<BR>
 			<BR>
-2.层次选择器 ：1）元素间加空格    ：  表示选取后代元素      &quot;body div&quot;<BR>
+2.层次选择器 ：1）元素间加空格   /.find（&quot;option&quot;）  ：  表示选取后代元素      &quot;body div&quot;<BR>
 				2）元素间加&gt;  ：	表示选取直接子元素       范围比  1）  小		<BR>
 				3）元素间加+   ： 表示选取在 紧接在a  元素后 的下一个  b元素【必须相邻着  ，不然无效】【同辈】<BR>
 									与.next()作用相同<BR>
@@ -600,17 +591,25 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 </DD>
 <DT>对象</DT>
 <!--property:date_created=1477551838-->
-<!--property:date_modified=1477618840-->
+<!--property:date_modified=1478077097-->
 <DD>
 1.$（function（）{}）  ：  相当于windows.onload = function（）{}<BR>
 <BR>
-2.
+2.$(document.ready(function(){}))<BR>
+<BR>
+3.JQuery 和 Dom 对象转换：<BR>
+			1）var $btn = $(&quot;button&quot;) ;      【也可以用DOM 对象接收   ？？】<BR>
+				var btn = $btn[0] ;<BR>
+			2） var btn = document.getElementById(&quot;btn&quot;);<BR>
+					$(btn)	
 </DD>
 <DT>方法</DT>
 <!--property:date_created=1477642627-->
-<!--property:date_modified=1477884819-->
+<!--property:date_modified=1478072633-->
 <DD>
-1.attr（name|pro|key,val|fn） ：<BR>
+3.JQuery 很多方法支持连缀 ，一个方法的返回值为方法执行完后的该对象本身，可以继续调用方法。<BR>
+<BR>
+1.attr（name|pro|key,val|fn） ：         name[属性名称] , properties , key/value , key/function<BR>
 		1）返回被选中的属性值<BR>
 		2）设置属性值<BR>
 		<BR>
@@ -618,7 +617,77 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 <BR>
 3.text（）： 括号里没有值，返回文本值；括号里有值，为其设值。<BR>
 <BR>
-4.click（）：相当于 onclick
+4.click（）：相当于 onclick<BR>
+<BR>
+5.$.trim(str) ： 处理字符串，去除空格<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</DD>
+<DT>节点</DT>
+<!--property:date_created=1478057852-->
+<!--property:date_modified=1478077277-->
+<DD>
+1.创建节点，加入到父节点  $(&quot;&lt;td&gt;&lt;p&gt;开始&lt;/p&gt;&lt;/td&gt;&quot;).appendTo($(&quot;#table1&quot;));   <BR>
+<BR>
+2.添加节点：   appendTo（）  、append（）    ： 将元素添加到指定节点末尾<BR>
+					prepend（） 、 prependTo（） ： 将元素添加到指定节点开始处<BR>
+	<BR>
+3.删除节点 ： remove（“条件”） ： 节点方法，把符合条件的节点给删除      例 ：  $(&quot;p&quot;).remove();   $(&quot;p&quot;).remove(&quot;.hello&quot;);<BR>
+				empty（） ： 节点方法  ，  把节点的 所有子节点删除       例： $(&quot;p&quot;).empty();   【删除所有段落的子节点】 <BR>
+			<BR>
+4.匹配节点 ： closest（条件）：一层一层往上找，知道找到匹配选择器的元素		<BR>
+<BR>
+5.parent（） ： 节点方法，返回当前节点的父节点	<BR>
+				        	 <BR>
+				<BR>
+				<BR>
+				<BR>
+				<BR>
+				
+</DD>
+<DT>用法</DT>
+<!--property:date_created=1478071098-->
+<!--property:date_modified=1478071120-->
+<DD>
+1.选取文本框内容 : 用val() 方法.<BR>
+<BR>
+2.
 </DD>
 </DL>
 
@@ -1842,6 +1911,7 @@ UUUAFFFFABRRRQAUUUUAFFFFAGfqU7272oTGGmCnIzxg1oUUVT2EgoooqRn/2Q">
 <DT>JDBC</DT>
 <!--property:date_created=1470040837-->
 <!--property:date_modified=1470040837-->
+<!--property:expanded-->
 <DD>
 <DL>
 <DT>相关</DT>
