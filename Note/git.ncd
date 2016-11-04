@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:4-->
+<!--LastNote:0-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -10,7 +10,7 @@
 <DL>
 <DT>Git下载安装</DT>
 <!--property:date_created=1474439088-->
-<!--property:date_modified=1474439537-->
+<!--property:date_modified=1478231357-->
 <!--property:expanded-->
 <DD>
 安装过程：<BR>
@@ -20,7 +20,7 @@
 <BR>
 3.选择回车换行的格式   ：  默认为(检出时转换为Windows风格,提交时转换为Linux风格.)<BR>
 	<BR>
-4.配置本地的账户和邮箱：  git congfig -l  可以查看<DL>
+4.配置本地的账户和邮箱：  git config -l  可以查看<DL>
 <DT>git操作</DT>
 <!--property:date_created=1474525890-->
 <!--property:date_modified=1474870580-->
