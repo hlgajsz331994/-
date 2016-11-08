@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:0-->
+<!--LastNote:3-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -10,7 +10,7 @@
 <DL>
 <DT>Git下载安装</DT>
 <!--property:date_created=1474439088-->
-<!--property:date_modified=1478231357-->
+<!--property:date_modified=1478586605-->
 <!--property:expanded-->
 <DD>
 安装过程：<BR>
@@ -20,10 +20,14 @@
 <BR>
 3.选择回车换行的格式   ：  默认为(检出时转换为Windows风格,提交时转换为Linux风格.)<BR>
 	<BR>
-4.配置本地的账户和邮箱：  git config -l  可以查看<DL>
+4.配置本地的账户和邮箱：  git config -l  可以查看<BR>
+<BR>
+-------------------------------------------------------------------------------------------------------<BR>
+5.创建密钥              $ ssh-keygen -t rsa -C &quot;本地用户邮箱名&quot;<BR>
+		id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<DL>
 <DT>git操作</DT>
 <!--property:date_created=1474525890-->
-<!--property:date_modified=1474870580-->
+<!--property:date_modified=1478502277-->
 <DD>
 在远程仓库  加入本地的  ssh 密匙<BR>
 <BR>
@@ -40,7 +44,7 @@
 						② http(s)://<BR>
 						③ user@server:/path.git<BR>
 						<BR>
-二.git 操作<BR>
+二.git 常用指令<BR>
 	1.暂存区：①git add  将文件加入到暂存区   <BR>
 			②git reset HEAD 文件名  ： 将文件从暂存区移除<BR>
 			<BR>
@@ -61,7 +65,33 @@
 					相当于删除原文件，增加一个新文件		<BR>
 	7.查看历史：git log  	<BR>
 				-p  记录详情    -num （数字）   记录条数	<BR>
-				--stat    简要的增改行数统计			<BR>
+				--stat    简要的增改行数统计	<BR>
+<BR>
+三.版本回退<BR>
+	1.commit id    每次提交的版本号   用十六进制表示<BR>
+	<BR>
+	2.回退到上一个版本 ：  git reset   HEAD^  （上一个版本 ）（  HEAD^^  上上个版本）（HEAD~100 往前100个版本）<BR>
+				 				git reset  （commit id 版本号  不需要写全）<BR>
+	<BR>
+	3.git reflog  记录每一次的命令 ，可以查看消失了的版本号									<BR>
+	<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
 	
 </DD>
 <DT>远程仓库</DT>
@@ -75,22 +105,58 @@
 </DD>
 <DT>git分支</DT>
 <!--property:date_created=1474868867-->
-<!--property:date_modified=1474869160-->
+<!--property:date_modified=1478588664-->
 <DD>
-1.Commit 指向 新建前生成的 tree对象               tree对象指向 暂存时生成的内容快照对象blob <BR>
+1.分支生成和管理：<BR>
+		1）Commit对象包含 指向 新建前生成的 tree对象的指针               tree对象指向 暂存时生成的内容快照对象blob  【深】<BR>
+		2）默认分支  master      Head  指向当前分支<BR>
+		3） git  branch   name ：新建分支<BR>
+		4）git check out  name  ：切换分支    <BR>
+						-b  同时新建<BR>
+		5）git merge name ：合并分支<BR>
 <BR>
-2.默认分支  master      Head  指向当前分支<BR>
+2.流程：1） 合并分支：新建分支 -切换到新建分支 - 合并分支<BR>
+		2）解决冲突：处理冲突部分，再进行合并<BR>
+		3）<BR>
 <BR>
-3. git  branch   name ：新建分支<BR>
 <BR>
-4.git check out  name  ：切换分支    <BR>
-		-b  同时新建<BR>
-<BR>
-5.git merge name ：合并分支<BR>
 <BR>
  <BR>
 <BR>
  
+</DD>
+<DT>TortoiseGit</DT>
+<!--property:date_created=1478500442-->
+<!--property:date_modified=1478585507-->
+<!--property:finished=1-->
+<DD>
+1.fetch 和pull 的区别  ： fetch拉取到本地 不与本地分支合并<BR>
+<BR>
+2.show log  可以把HEAD指向到之前的节点  ，     revert  相当于chenck out   回到最近的状态
+</DD>
+<DT>流程</DT>
+<!--property:date_created=1478502177-->
+<!--property:date_modified=1478585922-->
+<DD>
+1.add 和 commit     ：  add 加入到暂存区          、  commit 从暂存区提交到当前分支<BR>
+<BR>
+2.工作区 、 暂存区 、 本地仓库 、 远程仓库 <BR>
+<BR>
+3. git checkout  --file    这个文件回到  最近一次  commit 和add 的状态    （把文件在工作区的修改全部撤销）<BR>
+				【本地仓库替换工作区内容】<BR>
+<BR>
+4.命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，<BR>
+	但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。<BR>
+	<BR>
+
+</DD>
+<DT>gitHub</DT>
+<!--property:date_created=1478587407-->
+<!--property:date_modified=1478587551-->
+<DD>
+1. 支持两种协议 ：  <BR>
+			1）  http（s） ：  每次推送必须输入口令 ，  速度慢<BR>
+			2） git：//    ：  默认使用ssh 密钥     原生的git协议速度最快
 </DD>
 </DL>
 
