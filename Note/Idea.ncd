@@ -39,7 +39,7 @@
 </DD>
 <DT>快捷键</DT>
 <!--property:date_created=1475911642-->
-<!--property:date_modified=1476173311-->
+<!--property:date_modified=1478656008-->
 <DD>
 1.自动保存<BR>
 <BR>
@@ -57,11 +57,12 @@ C+B   ：打开光标所在位置的方法<BR>
 C+G ： 跳转到指定行<BR>
 <BR>
 2）C+A<BR>
-C+S+R： 替换<BR>
+C+A+L<BR>
 <BR>
 3）C+S<BR>
 C+S+A  ：搜索操作或设置<BR>
-C+S+上下 ： 整行或整段上下移动
+C+S+上下 ： 整行或整段上下移动<BR>
+C+S+R： 替换
 </DD>
 <DT>新节点</DT>
 <!--property:date_created=1475913574-->
