@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:29-->
+<!--LastNote:37-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -1343,7 +1343,7 @@ XMLHttpRequest：该对象是对JavaScript 的一个扩展，可使网页与服�
 										<DL>
 <DT>JQuery-Ajax</DT>
 <!--property:date_created=1478672838-->
-<!--property:date_modified=1478681573-->
+<!--property:date_modified=1478842311-->
 <DD>
 1.load（）方法  ：参数url ， data ，callback			载入远程HTML文件代码，并插入至DOM中       <BR>
 		                 用法：标签.load（）   ，把url中的内容嵌入到标签中去<BR>
@@ -1364,7 +1364,16 @@ XMLHttpRequest：该对象是对JavaScript 的一个扩展，可使网页与服�
 			<BR>
 3.$.getJSON[post]（） ：同上        返回的是JSON 对象<BR>
 <BR>
-4.$.ajax（） ：				<BR>
+4.$.ajax（） ：	<BR>
+				1）url ： 发送请求的地址<BR>
+				2）type ： 请求方式<BR>
+				3）async ： boolean型，默认为true，设置请求为（同步请求 或 异步请求【true】）。			<BR>
+				4）cache ：bollean 型， 默认为true ，设置为false 时，将不会从浏览器缓存中加载请求信息。<BR>
+				5）data ：发送到服务器的数据（如果不是字符串，将自动转为字符串）。【get 请求中将会附在url后】<BR>
+				6）dataType ：预期服务器返回的数据类型。		<BR>
+				7）success ： 请求成功后调用的回调函数，有两个参数	<BR>
+							①：data ，由服务器返回，根据dataType参数进行处理后的数据<BR>
+							②：描述状态的字符串（？）<BR>
 				<BR>
 				<BR>
 				<BR>
@@ -1392,6 +1401,7 @@ XMLHttpRequest：该对象是对JavaScript 的一个扩展，可使网页与服�
 <DT>XML</DT>
 <!--property:date_created=1478242064-->
 <!--property:date_modified=1478661294-->
+<!--property:expanded-->
 <DD>
 1.可扩展标记语言， 宗旨是传递数据<BR>
 <BR>
@@ -1666,17 +1676,18 @@ RRRQB//Z"><BR>
 <DL>
 <DT>生命周期</DT>
 <!--property:date_created=1476254574-->
-<!--property:date_modified=1476254598-->
+<!--property:date_modified=1478740998-->
 <DD>
 4.Servlet 生命周期的方法：<BR>
 	1）构造器【类本身的。】：只有第一次请求Servlet时，创建Servlet实例，调用构造器。<BR>
 		这说明Servlet是单实例的！<BR>
 		<BR>
 	2）init方法：只被调用一次，创建好实例后立即被调用，用于初始化当前Servlet。<BR>
+					[调用init方法，会传入容器给这个Servlet的一些信息，ServletConfig]<BR>
 	3）service：被多次调用，每次请求都会调用Service方法，实际用于响应请求。<BR>
 	4）destroy：只被调用一次，在当前Servlet所在的WEB应用被卸载时调用，用于释放当前Servlet所占用的资源。<BR>
 	<BR>
-	5）ServletConfig（init）【内部调用】：        （Servlet传递配置参数在 ServletConfig的一个对象内   ）<BR>
+	5）getServletConfig（）【内部调用】：        （Servlet传递配置参数在 ServletConfig的一个对象内   ）<BR>
   					①获取Servlet初始化参数：getInitParameter(java.lang.String name)     String user = config.getInitParameter(&quot;user&quot;);<BR>
 <BR>
 					②返回Enumeration对象（获取初始参数的key值   ，）：getInitParameterNames()    Enumeration&lt;String&gt; en =config.getInitParameterNames(); <BR>
@@ -1825,7 +1836,6 @@ getAttribute 必须先setAttribute.<BR>
 <DT>JSP</DT>
 <!--property:date_created=1471269793-->
 <!--property:date_modified=1471736661-->
-<!--property:expanded-->
 <DD>
 在很多动态网页中，绝大部分内容都是固定不变的，只有局部内容需要动态产生和改变。<BR>
 <BR>

@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:0-->
+<!--LastNote:2-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -11,6 +11,7 @@
 <DT>精卫</DT>
 <!--property:date_created=1473745028-->
 <!--property:date_modified=1474529639-->
+<!--property:expanded-->
 <DD>
 1.本地数据库设置成允许远程连接<BR>
 <BR>
@@ -28,7 +29,37 @@
 <BR>
 8.定时作业：执行时间按本地，日志记录为节点时间<BR>
 <BR>
-9.转换队列进行，作业并行执行
+9.转换队列进行，作业并行执行<DL>
+<DT>精卫-部署-16.11.10</DT>
+<!--property:date_created=1478758551-->
+<!--property:date_modified=1479085484-->
+<DD>
+老的etlm库，用新的etlm库覆盖，<BR>
+<BR>
+1.往etlm 三个关联表，插入资源库数据【日志库有问题也要改】（）              repo（databaseinfo）：关联WEB表、日志库     （r_database）：id 1   改日志库<BR>
+<BR>
+2.本地集成资源库    ，  本地集成老的资源库<BR>
+<BR>
+3.KettleEncr.              Kettle中的类，生成密匙<BR>
+<BR>
+4.作业、转换日志，通过repo 库  查询sql 得到<BR>
+<BR>
+5.  java -jar  执行完后    生成的  carte-config.xml 文件中        20160 分钟，  执行节点的日志保留时间。<BR>
+<BR>
+6.作业历史获取，---资源库分隔符  （“-”） →(&quot;$$&quot;)         【因为资源库id 带 -  】
+</DD>
+<DT>结构图生成</DT>
+<!--property:date_created=1478779428-->
+<!--property:date_modified=1479085583-->
+<DD>
+1.CentOS 7    下       kettle-ui 5.3         （把kettle-ui 5.4 移除）<BR>
+<BR>
+2.plugins 用于生成结构图   （去掉也能生成？）<BR>
+<BR>
+3.显示中文， 中文字体包
+</DD>
+</DL>
+
 </DD>
 </DL>
 </BODY>

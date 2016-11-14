@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:3-->
+<!--LastNote:4-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -127,12 +127,18 @@
 </DD>
 <DT>TortoiseGit</DT>
 <!--property:date_created=1478500442-->
-<!--property:date_modified=1478585507-->
+<!--property:date_modified=1479113170-->
 <!--property:finished=1-->
 <DD>
 1.fetch 和pull 的区别  ： fetch拉取到本地 不与本地分支合并<BR>
 <BR>
-2.show log  可以把HEAD指向到之前的节点  ，     revert  相当于chenck out   回到最近的状态
+2.show log  可以把HEAD指向到之前的节点  ，     revert  相当于chenck out   回到最近的状态<BR>
+<BR>
+3.revision graph   查看结构图<BR>
+<BR>
+4.Repo-browser   查看文件结构<BR>
+<BR>
+5.push的分支为当前HEAD 指向的分支，则只拉取当前的分支 ;如果为其他分支，则拉取所有分支    
 </DD>
 <DT>流程</DT>
 <!--property:date_created=1478502177-->
