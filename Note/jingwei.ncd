@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:2-->
+<!--LastNote:1-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -32,11 +32,12 @@
 9.转换队列进行，作业并行执行<DL>
 <DT>精卫-部署-16.11.10</DT>
 <!--property:date_created=1478758551-->
-<!--property:date_modified=1479085484-->
+<!--property:date_modified=1479178234-->
 <DD>
 老的etlm库，用新的etlm库覆盖，<BR>
 <BR>
-1.往etlm 三个关联表，插入资源库数据【日志库有问题也要改】（）              repo（databaseinfo）：关联WEB表、日志库     （r_database）：id 1   改日志库<BR>
+1.往etlm 三个关联表，插入资源库数据【日志库有问题也要改】（）        <BR>
+	      repo（databaseinfo）：关联WEB表、日志库     （r_database）：id 1   改日志库<BR>
 <BR>
 2.本地集成资源库    ，  本地集成老的资源库<BR>
 <BR>
