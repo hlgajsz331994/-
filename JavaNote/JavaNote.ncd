@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:37-->
+<!--LastNote:42-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -219,7 +219,6 @@ CSS是由选择器加声明组成的。<BR>
 <DT>JS</DT>
 <!--property:date_created=1476683387-->
 <!--property:date_modified=1478058426-->
-<!--property:expanded-->
 <DD>
 1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
 	1）通过&lt;script&gt;标签嵌入<BR>
@@ -1836,6 +1835,7 @@ getAttribute 必须先setAttribute.<BR>
 <DT>JSP</DT>
 <!--property:date_created=1471269793-->
 <!--property:date_modified=1471736661-->
+<!--property:expanded-->
 <DD>
 在很多动态网页中，绝大部分内容都是固定不变的，只有局部内容需要动态产生和改变。<BR>
 <BR>
@@ -2003,12 +2003,13 @@ JSP指令是为JSP引擎而设计的，它们并不直接产生任何可见的�
 </DD>
 <DT>MVC</DT>
 <!--property:date_created=1476347715-->
-<!--property:date_modified=1478145029-->
+<!--property:date_modified=1479265875-->
 <!--property:expanded-->
 <DD>
-1.使用JavaEE开发中常见的组件，（不必自己再去写类）<BR>
+1.使用JavaEE开发中常见的组件，（不必自己再去写类）【beanutils（处理javaBean）、等等】<BR>
 <BR>
-2.模型表示业务数据（关联数据库） 和业务逻辑   ，   一个模型能为多个视图提供数据  （可重用性）。【不同的系统，不同的操作环境】<BR>
+2.模型表示业务数据（关联数据库） 和业务逻辑   ，   一个模型能为多个视图提供数据  （可重用性）。<BR>
+						【不同的系统，不同的操作环境】<BR>
 <BR>
 3.关于MVC <BR>
 	1）M： model<BR>
@@ -2024,7 +2025,7 @@ JSP指令是为JSP引擎而设计的，它们并不直接产生任何可见的�
 		若目标的响应页面不需要从 request 中读取任何职，则可以使用重定向。（还可以防止表单的重复提交）<BR>
 		<BR>
 5.不足：<BR>
-		1）使用数据库连接池，DBUtills，JDBCUtils 工具类，DAO基类<BR>
+		1）使用数据库连接池，DBUtills，JDBCUtils 工具类，DAO基类 <BR>
 		2）一个请求一个Servlet不好！  一个模块使用一个Servlet ，即多个请求可以使用一个Servlet 。<BR>
 					<BR>
 		3）在页面上加入jQuery 提示<BR>

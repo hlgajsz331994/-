@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:6-->
+<!--LastNote:4-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -441,6 +441,23 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 </DD>
 </DL>
 
+</DD>
+<DT>安装JDK、Tomcat</DT>
+<!--property:date_created=1479279685-->
+<!--property:date_modified=1479284017-->
+<DD>
+---------JDK   <BR>
+	tar.gz 版本         tar -zxvf<BR>
+<BR>
+1./etc/profile     配置文件   <BR>
+<BR>
+2.改完加载配置文件    source /etc/profile<BR>
+<BR>
+3.export JAVA_HOME=/usr/local/jdk1.7.0_71<BR>
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar<BR>
+export PATH=$JAVA_HOME/bin:$PATH<BR>
+<BR>
+4.
 </DD>
 <DT>虚拟机</DT>
 <!--property:date_created=1472539231-->
