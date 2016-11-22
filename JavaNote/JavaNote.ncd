@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:42-->
+<!--LastNote:54-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -11,7 +11,6 @@
 <DT>JavaWeb</DT>
 <!--property:date_created=1470038581-->
 <!--property:date_modified=1476320725-->
-<!--property:expanded-->
 <DD>
 	一个WEB中完全可以没有web.xml文件。<BR>
 	web.xml是用来配置  欢迎页、servlet、filter等的。<BR>
@@ -218,7 +217,8 @@ CSS是由选择器加声明组成的。<BR>
 </DD>
 <DT>JS</DT>
 <!--property:date_created=1476683387-->
-<!--property:date_modified=1478058426-->
+<!--property:date_modified=1479698911-->
+<!--property:expanded-->
 <DD>
 1.JavaScript 必须嵌入到HTML文档，才能被浏览器解释和执行。<BR>
 	1）通过&lt;script&gt;标签嵌入<BR>
@@ -232,6 +232,14 @@ CSS是由选择器加声明组成的。<BR>
 3.    JS里没有checked（）方法，只有属性<BR>
 <BR>
 4.标签放置位置错误：会获取不到节点<BR>
+<BR>
+5.把JS和CSS脚本写在html里和写在独立文件里有什么区别？<BR>
+	答：都写在html里是性能最优的方案。<BR>
+		都写在html里是可维护性最差的方案。<BR>
+		分开写在js、css、html是可维护性最有的方案。<BR>
+		分开写在js、css、html是性能最差的方案。<BR>
+		折中一下，不可复用的js和css直接写在html中。<BR>
+		再优化下，把js都打包在一个文件里，css也打包在一个文件，减少http请求。<BR>
 <BR>
 <DL>
 <DT>语法基础</DT>
@@ -720,7 +728,7 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 <DL>
 <DT>节点</DT>
 <!--property:date_created=1478057852-->
-<!--property:date_modified=1478143142-->
+<!--property:date_modified=1479697366-->
 <DD>
 1.创建节点，加入到父节点  $(&quot;&lt;td&gt;&lt;p&gt;开始&lt;/p&gt;&lt;/td&gt;&quot;).appendTo($(&quot;#table1&quot;));   <BR>
 <BR>
@@ -747,6 +755,7 @@ JavaScript 库 ：封装了很多预定义的对象和实用函数。<BR>
 			2） wrapall（） ：    包围大的范围      例  ：  A.wrapAll（B）   B包裹A    <BR>
 			3） wrapInner（） ：  包围A里的内容    例： A.wrapInner（B） B 包裹A 里的内容<BR>
 				<BR>
+9.遍历节点：1） each（）：<BR>
 				
 </DD>
 <DT>事件</DT>
@@ -1254,7 +1263,7 @@ T8a0v+EZ0L/oCab/AOAkf+FXba1itIVgtoUiiQYVFUKoHsBQB//Z"><BR>
 XMLHttpRequest：该对象是对JavaScript 的一个扩展，可使网页与服务器进行通信。<DL>
 <DT>流程</DT>
 <!--property:date_created=1478595145-->
-<!--property:date_modified=1478663070-->
+<!--property:date_modified=1479692889-->
 <!--property:expanded-->
 <DD>
 1.创建XMLHttpRequest对象 ：   var request  = new XMLHttpRequest （） ；<BR>
@@ -1274,8 +1283,8 @@ XMLHttpRequest：该对象是对JavaScript 的一个扩展，可使网页与服�
 			3）status：（200：“OK”     、    404：“未找到页面”）<BR>
 <BR>
 4.为对象添加响应函数 ：  request . onreadystatechange =    function(){<BR>
-												request.readyState == 4    两个条件符合 ，打印结果																<BR>
-												request.status ==200<BR>
+												request.readyState == 4【请求已完成】    两个条件符合 ，打印结果																<BR>
+												request.status ==200    【OK】<BR>
 												<BR>
 												打印结果：request.responseText      (返回页面内所有的内容)<BR>
 														<BR>
@@ -1456,7 +1465,6 @@ XML 属性必须加引号<BR>
 <DT>Servlet</DT>
 <!--property:date_created=1470040159-->
 <!--property:date_modified=1470979373-->
-<!--property:expanded-->
 <DD>
 Servlet本质是一个JAVA类，实现一些特殊的接口，运行在Servlet容器里（例如：Tomcat、Servlet服务器）。<BR>
 <BR>
@@ -1835,7 +1843,6 @@ getAttribute 必须先setAttribute.<BR>
 <DT>JSP</DT>
 <!--property:date_created=1471269793-->
 <!--property:date_modified=1471736661-->
-<!--property:expanded-->
 <DD>
 在很多动态网页中，绝大部分内容都是固定不变的，只有局部内容需要动态产生和改变。<BR>
 <BR>
@@ -1995,16 +2002,26 @@ JSP指令是为JSP引擎而设计的，它们并不直接产生任何可见的�
 </DL>
 
 </DD>
-<DT>未解决</DT>
-<!--property:date_created=1478678817-->
-<!--property:date_modified=1478678843-->
+<DT>SSH</DT>
+<!--property:date_created=1479709919-->
+<!--property:date_modified=1479709930-->
+<!--property:expanded-->
 <DD>
-1.${pageContext.request.contextPath}    :   取得当前路径    EL表达式    ?
+<DL>
+<DT>Struts2</DT>
+<!--property:date_created=1479709932-->
+<!--property:date_modified=1479710260-->
+<DD>
+1.ActionContext ： 一个容器（Map），存放的对象就是我们执行Action 需要用到的对象<BR>
+				（Application、session、request）<BR>
+				ActionContext.getContext() ：获取系统的ActionContext实例
+</DD>
+</DL>
+
 </DD>
 <DT>MVC</DT>
 <!--property:date_created=1476347715-->
 <!--property:date_modified=1479265875-->
-<!--property:expanded-->
 <DD>
 1.使用JavaEE开发中常见的组件，（不必自己再去写类）【beanutils（处理javaBean）、等等】<BR>
 <BR>
@@ -2667,16 +2684,9 @@ UUUAFFFFABRRRQAUUUUAFFFFAGfqU7272oTGGmCnIzxg1oUUVT2EgoooqRn/2Q">
 </DL>
 
 </DD>
-<DT>要点</DT>
-<!--property:date_created=1471752109-->
-<!--property:date_modified=1471752152-->
-<DD>
-1. Java.lang 包下的类都默认导入
-</DD>
 <DT>JDBC</DT>
 <!--property:date_created=1470040837-->
 <!--property:date_modified=1470040837-->
-<!--property:expanded-->
 <DD>
 <DL>
 <DT>相关</DT>
@@ -2743,6 +2753,33 @@ ResultSetMetaData：可用于获取关于 ResultSet 对象中列的类型和属�
 </DD>
 </DL>
 
+</DD>
+<DT>Sql</DT>
+<!--property:date_created=1479717731-->
+<!--property:date_modified=1479717731-->
+<!--property:expanded-->
+<DD>
+<DL>
+<DT>sql1</DT>
+<!--property:date_created=1479717737-->
+<!--property:date_modified=1479717745-->
+<DD>
+1.
+</DD>
+</DL>
+
+</DD>
+<DT>未解决</DT>
+<!--property:date_created=1478678817-->
+<!--property:date_modified=1478678843-->
+<DD>
+1.${pageContext.request.contextPath}    :   取得当前路径    EL表达式    ?
+</DD>
+<DT>要点</DT>
+<!--property:date_created=1471752109-->
+<!--property:date_modified=1471752152-->
+<DD>
+1. Java.lang 包下的类都默认导入
 </DD>
 <DT>正则表达式</DT>
 <!--property:date_created=1477279765-->

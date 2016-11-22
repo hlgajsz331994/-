@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:1-->
+<!--LastNote:4-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -58,6 +58,21 @@
 2.plugins 用于生成结构图   （去掉也能生成？）<BR>
 <BR>
 3.显示中文， 中文字体包
+</DD>
+<DT>部署问题</DT>
+<!--property:date_created=1479459001-->
+<!--property:date_modified=1479689254-->
+<DD>
+1.新建服务器，开放端口8082、8080。<BR>
+<BR>
+<BR>
+2.启动Kettle 服务，节点是否与本机对应上。
+</DD>
+<DT>IDEA</DT>
+<!--property:date_created=1479799549-->
+<!--property:date_modified=1479799618-->
+<DD>
+1.方括号错误，设置-Build- Complier-java Complier
 </DD>
 </DL>
 

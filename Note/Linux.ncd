@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:4-->
+<!--LastNote:10-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -444,7 +444,8 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 </DD>
 <DT>安装JDK、Tomcat</DT>
 <!--property:date_created=1479279685-->
-<!--property:date_modified=1479284017-->
+<!--property:date_modified=1479691977-->
+<!--property:expanded-->
 <DD>
 ---------JDK   <BR>
 	tar.gz 版本         tar -zxvf<BR>
@@ -457,7 +458,65 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar<BR>
 export PATH=$JAVA_HOME/bin:$PATH<BR>
 <BR>
-4.
+4.<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+--------Mysql<BR>
+<BR>
+<BR>
+linux 下 mysql 文件解压后 要放在   /usr/local/mysql    目录下             rpm包<BR>
+<BR>
+linux下mysql安装完后是默认：区分表名的大小写，不区分列名的大小写； <BR>
+<BR>
+环境变量   echo $PATH       /etc/profile    <BR>
+<BR>
+1. service mysql start   启动服务<BR>
+2.ps-ef|grep mysql      查看mysql   服务<BR>
+find / -name 文件名				    reboot 重启服务器<BR>
+<BR>
+3.http://jingyan.baidu.com/article/a378c9609eb652b3282830fd.html         安装教程  <BR>
+<BR>
+4.mysql 服务找不到     ：  command not found      把bin目录下 某个文件 拷到 bin 目录下<BR>
+<BR>
+<BR>
+问题：1.sock 解决 ：    找不到sock文件，    文件在其他地方<BR>
+			1）mysql.sock  是创建与mysqld 服务器相关的MySql 通信端点所使用的套接字    <BR>
+					mysql配置文件：etc/my.cnf（或者在/etc/mysql/my.cnf）      【sock配置在里面】<BR>
+				socket 问题解决  ： http://blog.csdn.net/lzb0103/article/details/8254782   （软链接）<BR>
+				li -s     软链接               进入需要链接的文件夹，写链接源<BR>
+				<BR>
+	2.配置文件 my.cnf ： /etc/my.cnf   【？】 <BR>
+	<BR>
+	3.首次登陆没有密码，找   secret 文件    ，有默认生成的随机密匙<BR>
+						<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DL>
+<DT>精卫Mysql配置文件</DT>
+<!--property:date_created=1479451991-->
+<!--property:date_modified=1479690380-->
+<DD>
+[mysqld]<BR>
+socket=/usr/local/data/mysql/mysql.sock<BR>
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES<BR>
+character-set-server=utf8<BR>
+default-storage-engine=INNODB<BR>
+default_tmp_storage_engine=INNODB<BR>
+lower_case_table_names=1                               【不区分大小写】<BR>
+[client]<BR>
+socket=/usr/local/data/mysql/mysql.sock
+</DD>
+</DL>
+
 </DD>
 <DT>虚拟机</DT>
 <!--property:date_created=1472539231-->
