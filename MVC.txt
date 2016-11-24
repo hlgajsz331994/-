@@ -1,0 +1,6 @@
+1.jsp 页面  往servlet 传参数     href ="deleteStudent?flowId=<%=student.getFlowId >"
+
+2.步骤    servlet - DAO -数据库 - DAO - servlet - JSP
+
+3.DAO 里写需求  ，DAO<T>    类【增删改查之类的具体操作】    ， StudentDAO 接口 具体实现 【要实现的什么】  ，
+					Student 用到什么写什么

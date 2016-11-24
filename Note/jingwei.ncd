@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:4-->
+<!--LastNote:5-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -73,6 +73,18 @@
 <!--property:date_modified=1479799618-->
 <DD>
 1.方括号错误，设置-Build- Complier-java Complier
+</DD>
+<DT>待开发问题</DT>
+<!--property:date_created=1479975589-->
+<!--property:date_modified=1479975841-->
+<DD>
+1. 停止作业,不会立即停止,知道执行完当前运行的转换<BR>
+<BR>
+2.跑大量的程序,     执行按钮失效     黑框里的OK 消失   作业不跑<BR>
+<BR>
+3.云端的资源库   ,重启服务器后         .kettle/    目录下的映射文件， 指向映射后的IP ，    不再指向配置好的云端地址<BR>
+<BR>
+
 </DD>
 </DL>
 
