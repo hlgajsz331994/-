@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:4-->
+<!--LastNote:7-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -11,12 +11,11 @@
 <DT>IDEA</DT>
 <!--property:date_created=1475888158-->
 <!--property:date_modified=1475888158-->
-<!--property:expanded-->
 <DD>
 <DL>
 <DT>项目设置</DT>
 <!--property:date_created=1475888169-->
-<!--property:date_modified=1475982040-->
+<!--property:date_modified=1480042920-->
 <DD>
 1. Project 相当于 Myeclipse的 workSpace    ,Moudel   相当于Myeclipse 的 Project .<BR>
 <BR>
@@ -29,6 +28,10 @@
 4.运行第一个项目：   创建项目的SDK（软件开发工具），创建项目，给项目添加运行配置	<BR>
 <BR>
 5.配置Tomcat ：  添加Tomcat 配置   ，在项目设置里面 添加 Artifacts    	<BR>
+<BR>
+项目发布：<BR>
+		1）通过 Artifacts-Explored    获得发布的项目包<BR>
+		2）Artifacts-Active 通过上面的项目包 ，获得项目war 包   <BR>
 		<BR>
 		<BR>
 		<BR>
@@ -247,8 +250,8 @@ VhpoF/bG0uLO2iW8OsXVxLJPJuCRN9pCNgHJAEqkIpHLHO0lmABY1C91FdBlkj1NJbuO+jtl
 ksoRbozO6R7SZBMCAz8lQeVK8EEVxuk311P4e02xuEu7qeCOL7EkV0kIiJigAcyBoWOFuVVY
 wckswLtlWXupNDm/sttEVbSTTPkjiM6CRoohn5djKVcrtUKzeoLBin7zC0jwZdQabpNsyxWk
 trbpJJKIkwZSYZNjKhG8iSBcvkZTC/MxMigHQW+pxWvgmHVYftFzFFpy3CfaXHmyKI9w3sM/
-MR1PPNQ/8JBqrXDW6aLF5pthdx7rzCmPOCGOw4f2GR/tVPBpDy+EhorK9r/oRsvnYSlQFKBs
-jG4YGRwpIPIU8C2mlbbwXHnZxZi127PQ53df0pO49NCiPEE935Y0rTxct9ljupRLN5W1HztU
+MR1PPNQ/8JBqrXDW6aLF5pthdx7rzCmPOCGOw4f2GR/tVNBpDy+EhorK9r/oRsvnYSlQFKBs
+jG4YGRwpIPIU8C4mlbbwXHnZxZi127PQ53df0pO49NCiPEE935Y0rTxct9ljupRLN5W1HztU
 fK25zg8cD3pkviSa8t2fRrP7RizW6dpJfLKK4YqFGDub5TwcD3pYvD11ZRwDT9RWCUWkdpO7
 2+8OqAhWUbhtbk9cjnocUp8NSWsYj0m/+yK1olpKZIfNJRAQrKdww43Hk5HtTfW3yF2uJpOv
 Sz28MU8fmTLpUN68u4DezBsjAHH3c/j0qk/i77NOby6ZY7R9NtbhIWdVCySuy8uQMD7uSeAA
@@ -475,7 +478,7 @@ DdsOwoowXGcuQflXeAcr4Ztrey8cI0VtaYa8ktowNEltfJDW5mZldjwS3y7H3ELnbtU4rqW1
 S5Mcs2nantt21AQOt/p0rNbNIse1CGkjfBd8g4OPNUABVyM6w0S8t/E1tfJputxwi8M7Lc3K
 TAZgEIyTdN0+Zi21mxhRgDnbtX1PTrm9um0a4uBqEwuPLt5oi8BEaR7X3uoziNTlSwyWHRQz
 gFLT7nUtKfxXf3k9pdJaymVo4bdoi7rawsMMXbA2gDGDzzntVv8A4SDVWuGt00WLzTbC7j3X
-mFMecEMdhw/sMj/aqjp1hqd9Y65ZalbXFtLqgd2uWiiWNCYkiACLPIxOFzyQOvTiugTStt4L
+mFMecEMdhw/sMj/aqhp1hqd9Y65ZalbXFtLqgd2uWiiWNCYkiACLPIxOFzyQOvTiuhTStt4L
 jzs4sxa7dnoc7uv6Uncemhn33iOaDTYNQt7S2+yyW63HmXl4IAcjOxflbLY9cDkc+j18TwfZ
 Z7iS3dI0sI7+PLZMiMD8uPUEAd/vCqv/AAissckIgv4lK2MdlI8lqHcKoI3Rkt8hOechhwKl
 m8JrPb6HE96wOmqkchWPAuEXadpGeAWRD36Y71Ttdkq9lcrX3jm1sJ5o5vsEZtQv2qKW/VJg
@@ -632,13 +635,14 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z"><BR>
 </DD>
 <DT>问题</DT>
 <!--property:date_created=1476168691-->
-<!--property:date_modified=1479175506-->
+<!--property:date_modified=1480042709-->
 <DD>
 1. 右键不能run :   <BR>
 				解决：汉化包不对应<BR>
 				<BR>
 2.项目全部变红：项目被加入到版本控制中（git），<BR>
-					解决：setting-version control -    选择项目  None  加入到控制中（选择不需要加入到版本控制的文件） <BR>
+					解决：setting-version control -    选择项目  None <BR>
+					 加入到控制中（选择不需要加入到版本控制的文件） <BR>
 					<BR>
 3.项目不能发布 ： JDK版本统一     ①：项目配置    ②：设置-build-java compiler   <BR>
 <BR>
@@ -651,6 +655,31 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z"><BR>
 <!--property:date_modified=1479106091-->
 <DD>
 1.IDEA 运行项目,暂时改变Tomcat里的配置, 可以做到给每个项目独立配一个Tomcat .只要端口不同
+</DD>
+</DL>
+
+</DD>
+<DT>IDEA 强化</DT>
+<!--property:date_created=1480058118-->
+<!--property:date_modified=1480058118-->
+<!--property:expanded-->
+<DD>
+<DL>
+<DT>优化配置</DT>
+<!--property:date_created=1480058129-->
+<!--property:date_modified=1480060404-->
+<DD>
+1.设置 - Plugins  - 去掉不用的插件<BR>
+<BR>
+2.修改IDea 内存配置 , 给大内存的机子用.<BR>
+				根据不同的系统,选择不同的启动程序(32位和64位),      <BR>
+				配置文件(根据不同的启动程序 有不同的配置文件)  idea.exe.vmoptions<BR>
+				<BR>
+3.启动速度快 - 设置有项目缓存文件 - 默认位置(本地用户目录下 .IntelliJIdea14-system  目录)<BR>
+			可以修改 缓存目录 ，但配置会消失【复制文件夹，配置不消失】 【bin - idea.properties   】 <BR>
+				 【去掉被注释的文件路径】<BR>
+<BR>
+4.
 </DD>
 </DL>
 

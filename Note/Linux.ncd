@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:10-->
+<!--LastNote:2-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -82,7 +82,7 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 </DD>
 <DT>命令行1</DT>
 <!--property:date_created=1473305286-->
-<!--property:date_modified=1473837197-->
+<!--property:date_modified=1480064303-->
 <DD>
 3.提示符：1）#：管理员<BR>
 		  2）$：普通用户<BR>
@@ -100,8 +100,11 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 				⑧：命令行通配符    *匹配零个或多个字符    ？匹配任意一个字符	<BR>
 				⑨： exit 返回	<BR>
 				⑩：rz   上传    sz 加文件名   下载 <BR>
-		2）命令：①  Tomcat bin 目录下 ： tail -f catalina.out   查看Tomcat日志		<BR>
-				<BR>
+		2）命令：①  Tomcat bin 目录下 ：<BR>
+					1）	tail -f catalina.out   查看Tomcat日志	<BR>
+						加上参数 -n 15  查看最后的十五行   	<BR>
+					2）head  同上： 查看开头<BR>
+					3）grep 	<BR>
 								                                                                                 <BR>
 5.小技巧：1）TAB补全命令、补全文件名、不能补全参数    （按两下TAB显示所有的匹配项）<BR>
 		<BR>
