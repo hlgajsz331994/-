@@ -1,5 +1,5 @@
 <!DOCTYPE NoteCase-File>
-<!--LastNote:2-->
+<!--LastNote:3-->
 <HTML>
 <HEAD>
 <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
@@ -82,7 +82,7 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 </DD>
 <DT>命令行1</DT>
 <!--property:date_created=1473305286-->
-<!--property:date_modified=1480064303-->
+<!--property:date_modified=1480064883-->
 <DD>
 3.提示符：1）#：管理员<BR>
 		  2）$：普通用户<BR>
@@ -104,7 +104,7 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 					1）	tail -f catalina.out   查看Tomcat日志	<BR>
 						加上参数 -n 15  查看最后的十五行   	<BR>
 					2）head  同上： 查看开头<BR>
-					3）grep 	<BR>
+					3）grep ： 在文件中查找字符串<BR>
 								                                                                                 <BR>
 5.小技巧：1）TAB补全命令、补全文件名、不能补全参数    （按两下TAB显示所有的匹配项）<BR>
 		<BR>
@@ -123,7 +123,7 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 </DD>
 <DT>命令行2</DT>
 <!--property:date_created=1473345619-->
-<!--property:date_modified=1473583948-->
+<!--property:date_modified=1480065475-->
 <DD>
 1.日期时间：1）命令 date用以查看、设置当前系统时间<BR>
 			格式化显示时间：+%Y（）+%m（）+%d<BR>
@@ -137,7 +137,7 @@ CentOS LiveCD、LiveDVD和BinDVD区别在哪里   <BR>
 			3）head：用以显示文件的头几行（默认十行）<BR>
 						-n 指定显示行数<BR>
 			4）tail：用以显示文件的末尾几行（默认十行）<BR>
-						-n 指定显示行数<BR>
+						-n+指定显示行数<BR>
 						-f  追踪显示文件更新（用于查看日志，持续显示新增的内容）<BR>
 			5）more：用于翻页显示文件内容（只能向下翻页）<BR>
 			6）less：用于翻页显示文件内容（带上下翻页）【按Q退出】<BR>
