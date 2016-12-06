@@ -667,13 +667,15 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z"><BR>
 <DL>
 <DT>优化配置</DT>
 <!--property:date_created=1480058129-->
-<!--property:date_modified=1480060404-->
+<!--property:date_modified=1480988121-->
 <DD>
 1.设置 - Plugins  - 去掉不用的插件<BR>
 <BR>
 2.修改IDea 内存配置 , 给大内存的机子用.<BR>
 				根据不同的系统,选择不同的启动程序(32位和64位),      <BR>
 				配置文件(根据不同的启动程序 有不同的配置文件)  idea.exe.vmoptions<BR>
+					-Xms512m   ： 初始化最小内存<BR>
+					-Xmx1024m  ： 最大内存<BR>
 				<BR>
 3.启动速度快 - 设置有项目缓存文件 - 默认位置(本地用户目录下 .IntelliJIdea14-system  目录)<BR>
 			可以修改 缓存目录 ，但配置会消失【复制文件夹，配置不消失】 【bin - idea.properties   】 <BR>
